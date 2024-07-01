@@ -37,8 +37,8 @@
     top: 50%;
     width: 2.4rem;
     height: 2.4rem;
-    background: url("../images/main/angle-small-up.svg") no-repeat left top / 100% 100%;
-    transform: translate(-50%, -58%);
+    background: url("../images/main/ico_arrow_top.svg") no-repeat left top / 100% 100%;
+    transform: translate(-50%, -50%);
 }
 .footer {
     position: relative;

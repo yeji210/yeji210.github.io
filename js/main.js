@@ -227,7 +227,6 @@ $(document).ready(function(){
         }, 1200)
         );
     }
-    
 
     // 화면크기에 따른 폰트사이즈 변경
     function visualAnimResponsive() {
