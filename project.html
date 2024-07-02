@@ -41,33 +41,32 @@
 
     <header id="header">
       <div class="header_wrap">
-
         <div class="inner">
           <h1 class="logo">
             <a href="index.html"><img src="images/logo/logo.svg" alt="logo"></a>
           </h1>
-
           <!-- nav -->
           <div class="nav">
             <ul class="navbar">
-              <li id="menu-item-332" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-332"><a href="index.html"><span>메인</span></a>
+              <li><a href="index.html"><span>메인</span></a>
               </li>
-              <li id="menu-item-332" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-332"><a href="project.html"><span>포트폴리오</span></a>
+              <li><a href="project.html"><span>포트폴리오</span></a>
               </li>
-              <!-- <li id="menu-item-974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-974"><a href="portfolio.html"><span>포트폴리오</span></a>             
-              </li>               -->
             </ul>
-          </div>
-          <div class="ham_wrap mo">
-            <div class="hamburger">
-              <a href="#">
-                <div>
-                <span></span>
-                <span></span>
-                <span></span>
-                </div>
-              </a>
-            </div>  
+          </div>         
+          <div class="ham_wrap">
+            <input type="checkbox" id="check_box" />
+            <label for="check_box">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+            <div class="side_menu">
+              <ul>
+                <li><a href="index.html">메인</a></li>
+                <li><a href="project.html">포트폴리오</a></li>
+              </ul>
+            </div>
           </div>
         </div><!-- nav -->
       </div>
@@ -82,7 +81,7 @@
             <!-- inner -->
             <div class="inner">
               <div class="designer_head">
-                <h3>Project</h3>
+                <h3>Portfolio</h3>
                 <p>실무작업물 리스트입니다.</p>
               </div>
 
@@ -106,7 +105,7 @@
                         <p class="bot">
                           <span class="tit">
                             모티
-                            <mark>팀 프로젝트</mark>
+                            <mark>반응형 홈페이지</mark>
                           </span>
                           <button class="arrow"></button>
                         </p>
@@ -120,10 +119,10 @@
                             <div class="modal_txt">
                               <div class="modal_tit">
                                 <h4>MOTI</h4>
-                                <p>쇼핑몰 사이트입니다.
-                                  <br>(2022년 終/약 2개월 소요)
+                                <p class="">모티는 1인가구 전문 식품 쇼핑몰 사이트 입니다. 
+                                  <br>(2023년 終 / 약 2개월 소요)
                                 </p>
-                              </div>
+                              </div>                              
                               <div class="hash_list">
                                 <span class="tag">기획 90%</span>
                                 <span class="tag">디자인 90%</span>
@@ -131,19 +130,30 @@
                                 <span class="tag bg_gray">반응형</span>
                                 <span class="tag bg_gray">그누보드</span>
                               </div>
+                              <!-- <div class="colorCode">
+                                <p>Color Code</p>
+                                <span class="cbox" style="background-color:#006A5B;"></span>
+                                <span class="cbox" style="background-color:#efeeda;"></span>
+                              </div> -->
                             </div>
                             <div class="modal_txt">
                               <div class="modal_tit">
-                                <h4>메인 페이지 ↓</h4>
+                                <h5>메인 페이지 ↓</h5>
                               </div>
                             </div>
-                            <img src="images/project/sub10_2.png" alt="">
+                            <img src="images/sub/sub01_1.png" alt="">
                             <div class="modal_txt">
                               <div class="modal_tit">
-                                <h4>상품상세 페이지 ↓</h4>
+                                <h5>상품리스트 페이지 ↓</h5>
                               </div>
                             </div>
-                            <img src="images/project/sub10_3.png" alt="">
+                            <img src="images/sub/sub01_2.png" alt="">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h5>마이페이지 ↓</h5>
+                              </div>
+                            </div>
+                            <img src="images/sub/sub01_3.png" alt="">
                           </div>
                         </div>
                       </div><!-- 모달창 끝 -->
@@ -158,7 +168,7 @@
                         <p class="bot">
                           <span class="tit">
                             테솔컬리지
-                            <mark>팀 프로젝트(+와이어 프레임)</mark>
+                            <mark>반응형 홈페이지(+와이어 프레임)</mark>
                           </span>
                           <button class="arrow"></button>
                         </p>
@@ -172,64 +182,41 @@
                             <div class="modal_txt">
                               <div class="modal_tit">
                                 <h4>테솔컬리지</h4>
-                                <p>영상수업, 온라인 테스트, 개인별 수업진행률, 선생님 전용 페이지 등 개발이 필요한 부분은 개발팀과 협력하였습니다. (2023년 終/약 3개월 소요)</p>
+                                <p>테솔컬리지는 영어강사양성 전문기관으로 온라인 영상수업을 제공하는 교육 홈페이지입니다.<br> 영상수업, 온라인 테스트, 개인별 수업진행률 관리, 강사 전용 페이지 등 개발이 필요한 부분은 개발팀과 협력하였습니다. <br>(2023년 終 / 약 3개월 소요)</p>
                               </div>
                               <div class="hash_list">
                                 <span class="tag">기획 90%</span>
                                 <span class="tag">디자인 70%</span>
                                 <span class="tag">구현 80%</span>
+                                <span class="tag bg_gray">개발자협업</span>
                                 <span class="tag bg_gray">반응형</span>
                                 <span class="tag bg_gray">그누보드</span>
                               </div>
                             </div>
                             <div class="modal_txt">
                               <div class="modal_tit">
-                                <h4>메인 ↓</h4>
+                                <h5>와이어프레임 ↓</h5>
                               </div>
                             </div>
-                            <img src="images/project/sub02_2.png" alt="">
+                            <div class="wire_wrap">
+                              <img src="images/sub/sub02_1.png" alt="">
+                              <img src="images/sub/sub02_2.png" alt="">
+                              <img src="images/sub/sub02_7.png" alt="">
+                            </div>
+                            <div class="wire_wrap">
+                              <img src="images/sub/sub02_3.png" alt="">
+                              <img src="images/sub/sub02_4.png" alt="">
+                            </div>
+                            <div class="wire_wrap">
+                              <img src="images/sub/sub02_5.png" alt="">
+                              <img src="images/sub/sub02_6.png" alt="">
+                            </div>                              
                             <div class="modal_txt">
                               <div class="modal_tit">
-                                <h4>수강안내 ↓</h4>
+                                <h5>메인페이지 구현 ↓</h5>
                               </div>
                             </div>
-                            <img src="images/project/sub02_3.png" alt="">
-                            <div class="modal_txt">
-                              <div class="modal_tit">
-                                <h4>마이페이지 ↓</h4>
-                              </div>
-                            </div>
-                            <img src="images/project/sub02_4.png" alt="">
-                            <div class="modal_txt">
-                              <div class="modal_tit">
-                                <h4>나의강의실 ↓</h4>
-                              </div>
-                            </div>
-                            <img src="images/project/sub02_5.png" alt="">
-                            <div class="modal_txt">
-                              <div class="modal_tit">
-                                <h4>모듈별 문제은행 ↓</h4>
-                              </div>
-                            </div>
-                            <img src="images/project/sub02_6.png" alt="">
-                            <div class="modal_txt">
-                              <div class="modal_tit">
-                                <h4>수강후기 ↓</h4>
-                              </div>
-                            </div>
-                            <img src="images/project/sub02_7.png" alt="">
-                            <div class="modal_txt">
-                              <div class="modal_tit">
-                                <h4>문제은행 작성 ↓</h4>
-                              </div>
-                            </div>
-                            <img src="images/project/sub02_8.png" alt="">
-                            <div class="modal_txt">
-                              <div class="modal_tit">
-                                <h4>메인페이지 구현 ↓</h4>
-                              </div>
-                            </div>
-                            <img src="images/project/sub02_9.png" alt="">
+                            <img src="images/sub/sub02_8.png" alt="">
                           </div>
                         </div>
                       </div><!-- 모달창 끝 -->
@@ -243,7 +230,7 @@
                         <p class="bot">
                           <span class="tit">
                             미테크성형외과
-                            <mark>팀 프로젝트</mark>
+                            <mark>반응형 홈페이지</mark>
                           </span>
                           <button class="arrow"></button>
                         </p>
@@ -257,8 +244,8 @@
                             <div class="modal_txt">
                               <div class="modal_tit">
                                 <h4>미테크성형외과</h4>
-                                <p>저는 '성형/재건' 중 '성형'페이지를 주로 작업하였습니다.
-                                  <br>(2023년 終/약 1개월 소요)
+                                <p>미테크성형외과는 미용과 재건 홈페이지로 나누어 제작되었습니다. 성형외과 특성 상 미용효과, 장비 설명 등 서브페이지에 들어가야할 내용이 많아 순서 및 구성에도 신경을 많이 써서 제작하였습니다.
+                                  <br>(2023년 終 / 약 1개월 소요)
                                 </p>
                               </div>
                               <div class="hash_list">
@@ -271,16 +258,19 @@
                             </div>
                             <div class="modal_txt">
                               <div class="modal_tit">
-                                <h4>성형 페이지 ↓</h4>
+                                <h5>성형 페이지 ↓</h5>
                               </div>
                             </div>
-                            <img src="images/project/sub05_2.png" alt="">
+                            <img src="images/sub/sub03_1.png" alt="">
+                            <img src="images/sub/sub03_2.png" alt="">
                             <div class="modal_txt">
                               <div class="modal_tit">
-                                <h4>재건 페이지 ↓</h4>
+                                <h5>재건 페이지 ↓</h5>
                               </div>
                             </div>
-                            <img src="images/project/sub05_3.png" alt="">
+                            <img src="images/sub/sub03_3.png" alt="">
+                            <img src="images/sub/sub03_4.png" alt="">
+                            <img src="images/sub/sub03_5.png" alt="">
                           </div>
                         </div>
                       </div><!-- 모달창 끝 -->
@@ -295,7 +285,7 @@
                         <p class="bot">
                           <span class="tit">
                             고은사진미술관
-                            <mark>팀 프로젝트(+APP)</mark>
+                            <mark>반응형 홈페이지(+APP)</mark>
                           </span>
                           <button class="arrow"></button>
                         </p>
@@ -309,7 +299,7 @@
                             <div class="modal_txt">
                               <div class="modal_tit">
                                 <h4>고은사진미술관</h4>
-                                <p>이달의 공연, 예정공연 페이지는 개발팀과 협력하였습니다. (2023년 終/앱 포함 약 3개월 소요)
+                                <p>고은사진미술관의 전시 및 공연소개, 사진집 판매, 도슨트 기능 등을 제공하는 홈페이지입니다.<br>이달의 공연, 예정공연 페이지는 개발팀과 협력하여 작업했습니다. (2023년 終 / 앱 포함 약 3개월 소요)
                                   <br>
                                   <a href="https://play.google.com/store/apps/details?id=com.goeunmuseum&pli=1" target="_blank" 
                                     style="font-family: 'GmarketSansMedium'; width: auto; height: 40px; padding: 0 20px; background: #a3bdfb;
@@ -319,31 +309,32 @@
                                 </p>
                               </div>
                               <div class="hash_list">
-                                <span class="tag">기획 70%</span>
+                                <span class="tag">기획 80%</span>
                                 <span class="tag">디자인 80%</span>
                                 <span class="tag">구현 80%</span>
+                                <span class="tag bg_gray">개발자협업</span>
                                 <span class="tag bg_gray">반응형</span>
                                 <span class="tag bg_gray">그누보드</span>
                               </div>
                             </div>
                             <div class="modal_txt">
                               <div class="modal_tit">
-                                <h4>메인 페이지 ↓</h4>
+                                <h5>메인 페이지 ↓</h5>
                               </div>
                             </div>
-                            <img src="images/project/sub06_2.png" alt="">
+                            <img src="images/sub/sub04_1.png" alt="">
                             <div class="modal_txt">
                               <div class="modal_tit">
-                                <h4>지난공연 페이지 ↓</h4>
+                                <h5>지난공연 페이지 ↓</h5>
                               </div>
                             </div>
-                            <img src="images/project/sub06_3.png" alt="">
+                            <img src="images/sub/sub04_3.png" alt="">
                             <div class="modal_txt">
                               <div class="modal_tit">
-                                <h4>이전전시 페이지 ↓</h4>
+                                <h5>이전전시 페이지 ↓</h5>
                               </div>
                             </div>
-                            <img src="images/project/sub06_4.png" alt="">
+                            <img src="images/sub/sub04_2.png" alt="">
                           </div>
                         </div>
                       </div><!-- 모달창 끝 -->
@@ -358,7 +349,7 @@
                         <p class="bot">
                           <span class="tit">
                             부산광역시 구 봉사센터
-                            <mark>팀 프로젝트</mark>
+                            <mark>반응형 홈페이지</mark>
                           </span>
                           <button class="arrow"></button>
                         </p>
@@ -373,13 +364,13 @@
                               <div class="modal_tit">
                                 <h4>부산광역시 구 봉사센터</h4>
                                 <p>금정구(대표) · 북구 · 동구 · 서구 · 진구 봉사센터 홈페이지를 제작했으며 수요처신청 · 봉사단체신청 · 보고서제출 페이지는 개발팀과 협력하여 작업했습니다.
-                                  <br>(2022년 終/모든 구 홈페이지 제작에 약 4개월 소요)
+                                  <br>(2022년 終 / 모든 구 홈페이지 제작에 약 4개월 소요)
                                 </p>
                               </div>
                               <div class="hash_list">
-                                <span class="tag">기획 30%</span>
-                                <span class="tag">디자인 40%</span>
-                                <span class="tag">구현 50%</span>
+                                <span class="tag">기획 50%</span>
+                                <span class="tag">디자인 50%</span>
+                                <span class="tag">구현 80%</span>
                                 <span class="tag bg_gray">개발자협업</span>
                                 <span class="tag bg_gray">반응형</span>
                                 <span class="tag bg_gray">그누보드</span>
@@ -387,16 +378,22 @@
                             </div>
                             <div class="modal_txt">
                               <div class="modal_tit">
-                                <h4>메인 페이지 ↓</h4>
+                                <h5>메인 페이지 ↓</h5>
                               </div>
                             </div>
-                            <img src="images/project/sub07_2.png" alt="">
+                            <img src="images/sub/sub05_1.png" alt="">
                             <div class="modal_txt">
                               <div class="modal_tit">
-                                <h4>재능나눔 봉사 등록 ↓</h4>
+                                <h5>재능나눔 봉사 등록 ↓</h5>
                               </div>
                             </div>
-                            <img src="images/project/sub07_3.png" alt="">
+                            <img src="images/sub/sub05_2.png" alt="">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h5>조직도 ↓</h5>
+                              </div>
+                            </div>
+                            <img src="images/sub/sub05_3.png" alt="">                          
                           </div>
                         </div>
                       </div><!-- 모달창 끝 -->
@@ -409,8 +406,8 @@
                         </p>
                         <p class="bot">
                           <span class="tit">
-                            라이카해운대스토어
-                            <mark>팀 프로젝트</mark>
+                            라이카스토어해운대
+                            <mark>반응형 홈페이지</mark>
                           </span>
                           <button class="arrow"></button>
                         </p>
@@ -423,9 +420,9 @@
                           <div class="modal">
                             <div class="modal_txt">
                               <div class="modal_tit">
-                                <h4>라이카해운대스토어</h4>
-                                <p>쇼핑몰 사이트로 판매관리자 페이지, 결제페이지 등 개발이 필요한 부분은 개발팀과 협력하여 작업했습니다.
-                                  <br>(2022년 終/약 2개월 소요)
+                                <h4>라이카스토어해운대</h4>
+                                <p>카메라 쇼핑몰 사이트로 판매관리자 페이지, 결제페이지 등 개발이 필요한 부분은 개발팀과 협력하여 작업했습니다.
+                                  <br>(2022년 終 / 약 2개월 소요)
                                 </p>
                               </div>
                               <div class="hash_list">
@@ -439,16 +436,16 @@
                             </div>
                             <div class="modal_txt">
                               <div class="modal_tit">
-                                <h4>메인 페이지 ↓</h4>
+                                <h5>메인 페이지 ↓</h5>
                               </div>
                             </div>
-                            <img src="images/project/sub08_2.png" alt="">
+                            <img src="images/sub/sub06_1.png" alt="">
                             <div class="modal_txt">
                               <div class="modal_tit">
-                                <h4>카메라 페이지 ↓</h4>
+                                <h5>상품리스트 페이지 ↓</h5>
                               </div>
                             </div>
-                            <img src="images/project/sub08_3.png" alt="">
+                            <img src="images/sub/sub06_2.png" alt="">
                           </div>
                         </div>
                       </div><!-- 모달창 끝 -->
@@ -462,7 +459,7 @@
                         <p class="bot">
                           <span class="tit">
                             세화병원
-                            <mark>팀 프로젝트</mark>
+                            <mark>반응형 홈페이지</mark>
                           </span>
                           <button class="arrow"></button>
                         </p>
@@ -476,7 +473,7 @@
                             <div class="modal_txt">
                               <div class="modal_tit">
                                 <h4>세화병원</h4>
-                                <p>주로 사이트 유지보수 및 이벤트 배너를 제작했습니다.</p>
+                                <p>세화병원은 난임치료전문 병원입니다. 주로 사이트 유지보수 및 이벤트 배너를 제작했습니다.</p>
                               </div>
                               <div class="hash_list">
                                 <span class="tag">유지보수</span>
@@ -485,7 +482,7 @@
                                 <span class="tag bg_gray">그누보드</span>
                               </div>
                             </div>
-                            <img src="images/project/sub04_2.png" alt="">
+                            <img src="images/sub/sub07_1.png" alt="">
                           </div>
                         </div>
                       </div><!-- 모달창 끝 -->
@@ -500,7 +497,7 @@
                         <p class="bot">
                           <span class="tit">
                             가나안석세스아카데미
-                            <mark>팀 프로젝트</mark>
+                            <mark>반응형 홈페이지</mark>
                           </span>
                           <button class="arrow"></button>
                         </p>
@@ -508,14 +505,13 @@
                       <!-- 모달창 -->
                       <div id="modalWrap" class="popup modal9">
                         <span id="closeBtn" class="close">&times;</span>
-                        <a href="http://ijchicken.com" class="go_btn" target="_blank">사이트 바로가기 ></a>
+                        <a href="http://success-camp.com/" class="go_btn" target="_blank">사이트 바로가기 ></a>
                         <div id="modalBody">
                           <div class="modal">
                             <div class="modal_txt">
                               <div class="modal_tit">
-                                <h4>인정후라이드</h4>
-                                <p>브랜드소개 홈페이지
-                                  <br>(2023년 終/약 1주 소요)
+                                <h4>가나안석세스아카데미</h4>
+                                <p>가나안석세스아카데미는 필리핀에 위치한 국제학교로 연수프로그램 소개, 상담예약을 받는 홈페이지입니다. 기획단계에서는 마케팅팀과 협력하여 작업하였습니다. <br>(2023년 終/약 1개월 소요)
                                 </p>
                               </div>
                               <div class="hash_list">
@@ -528,17 +524,10 @@
                             </div>
                             <div class="modal_txt">
                               <div class="modal_tit">
-                                <h4>메인 페이지 ↓</h4>
+                                <h5>메인 페이지 ↓</h5>
                               </div>
                             </div>
-                            <img src="images/project/sub09_2.png" alt="">
-                            <div class="modal_txt">
-                              <div class="modal_tit">
-                                <h4>상품리스트 페이지 ↓</h4>
-                              </div>
-                            </div>
-                            <img src="images/project/sub09_3.png" alt="">
-                          </div>
+                            <img src="images/sub/sub08_1.png" alt="">                           
                         </div>
                       </div><!-- 모달창 끝 -->
                     </li>                   
@@ -599,7 +588,7 @@
                     <li class="is-new">
                       <a href="javascript:openModal('modal12');" id="popupBtn01">
                         <p class="top">
-                          <img src="images/main/p_list11.jpg" alt="">
+                          <img src="images/sub/sub_g_02.jpg" alt="">
                         </p>
                         <p class="bot">
                           <span class="tit">
@@ -622,13 +611,14 @@
                                   <br>(2022년 終/약 2개월 소요)
                                 </p>
                               </div> -->
-                              <img src="images/sub/sub02_6.png" alt="옥외광고 이미지"></br></br></br>
-                              <img src="images/sub/sub02_1.png" alt="옥외광고 이미지"></br></br></br>
-                              <img src="images/sub/sub02_2.png" alt="옥외광고 이미지"></br></br></br>
-                              <img src="images/sub/sub02_3.png" alt="옥외광고 이미지"></br></br></br>
-                              <img src="images/sub/sub02_4.png" alt="옥외광고 이미지"></br></br></br>
-                              <img src="images/sub/sub02_5.png" alt="옥외광고 이미지"></br></br></br>
-                              <img src="images/sub/sub02_7.png" alt="옥외광고 이미지"></br></br></br>
+                              <img src="images/sub/sub_g_02.jpg" alt="옥외광고 이미지"></br></br></br>
+                              <img src="images/sub/sub_g_02_1.png" alt="옥외광고 이미지"></br></br></br>
+                              <img src="images/sub/sub_g_02_2.png" alt="옥외광고 이미지"></br></br></br>
+                              <img src="images/sub/sub_g_02_3.png" alt="옥외광고 이미지"></br></br></br>
+                              <img src="images/sub/sub_g_02_4.png" alt="옥외광고 이미지"></br></br></br>
+                              <img src="images/sub/sub_g_02_5.png" alt="옥외광고 이미지"></br></br></br>
+                              <img src="images/sub/sub_g_02_6.png" alt="옥외광고 이미지"></br></br></br>
+                              <img src="images/sub/sub_g_02_7.png" alt="옥외광고 이미지"></br></br></br>
                               
                             </div>
                           </div>
@@ -667,10 +657,7 @@
                       <a href="index.html">메인</a>
                   </li>
                   <li>
-                      <a class="soon" href="project.html">프로젝트</a>
-                  </li>
-                  <li>
-                      <a href="portfolio.html">포트폴리오</a>
+                      <a class="soon" href="project.html">포트폴리오</a>
                   </li>
               </ul>
           

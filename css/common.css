@@ -117,7 +117,7 @@ body {
     overflow-x: hidden;
     width: 100%;
     line-height: 1;
-    color: #6b7684;
+    /* color: #6b7684; */
     font-size: 1.8rem;
     font-family: "Pretendard GOV Variable", "Pretendard GOV", "Noto Sans KR", AppleGothic, "Malgun Gothic", "맑은 고딕", "Dotum", sans-serif;
 }
