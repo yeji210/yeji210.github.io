@@ -65,7 +65,6 @@
 }
 .footer .menu_list li {
     margin-right: 2.4rem;
-    line-height: 1.5;
     font-weight: 700;
 }
 .footer .menu_list li a {
@@ -159,10 +158,6 @@
         width: calc(100vw * (174 / 1180));
         height: calc(100vw * (52 / 1180));
     }
-    /* .footer .menu_list li {
-        margin-right: calc(100vw * (32 / 1180));
-        font-size: calc(100vw * (24 / 1180));
-    } */
     .footer .address_list {
         margin-top: calc(100vw * (50 / 1180));
     }
@@ -217,17 +212,13 @@
         position: static;
     }
     .footer h2 img {
-        width: calc(100vw * (300 / 767));
-        height: calc(100vw * (90 / 767));
+        display: none;
     }
     .footer .menu_list {
         display: block;
-        margin-top: calc(100vw * (100 / 767));
     }
     .footer .menu_list li {
         margin-top: 10px;
-        /* margin-right: 0;
-        font-size: calc(100vw * (40 / 767)); */
     }
     .footer .menu_list li a {
         font-size: 20px;
@@ -236,7 +227,7 @@
         margin-top: 0;
     }
     .footer .address_list {
-        margin-top: calc(100vw * (160 / 767));
+        margin-top: 50px;
     }
     .footer .address_list li {
         margin-top: calc(100vw * (4 / 767));
