@@ -98,7 +98,7 @@ section .inner { padding: 0 4%; }
 }
 .prejects_body li:hover .arrow { background-position: 70%; }
 .prejects_body li .tit { width: calc(100% - 50px); font-size: 26px; line-height: 38px; font-weight: 700; line-height: 1.2; color: #393939; }
-.prejects_body li .tit mark { display: block; color: #9d9d9d; line-height: 1; margin-top: 10px; font-weight: 400; background-color: transparent; font-size:20px}
+.prejects_body li .tit mark { display: block; color: #9d9d9d; line-height: 1; margin-top: 8px; font-weight: 400; background-color: transparent; font-size:20px}
 
 
 /* 탭 css */
