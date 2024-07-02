@@ -282,8 +282,8 @@
     
     .profile_list tr {vertical-align: top;}
     .profile_list th, .profile_list td{line-height: 1.4; }
-    .profile_list th {font-size: 18px; font-family: 'GmarketSansMedium'; text-align: left; padding: 0 0 15px 0;}
-    .profile_list th span{background-color: #f3f3f3; padding: 7px 10px 5px; border-radius: 20px; font-size: 13px;}
+    .profile_list th {font-size: 18px; font-family: 'GmarketSansMedium'; text-align: left; padding: 0 25px 0 0;}
+    .profile_list th span{background-color: #f3f3f3; padding: 7px 0 5px; border-radius: 20px; font-size: 13px; display: block; text-align: center;}
     .profile_list td {font-size: 16px; padding: 0 0 15px 0;}
     .profile_list td ul {width: 100%; padding: 20px 0; border-bottom: 1px solid #ededed;}
     .profile_list td ul:first-child {padding: 0 0 15px 0;}
@@ -303,6 +303,7 @@
 
     @media screen and (max-width: 767px) {
         .profile_list th, .profile_list td {font-size: 14px;}
+        .profile_list th{padding: 0 10px 0 0;}
         .profile_list td ul li strong {width: 100%;}
         .profile_list td ul li p {width: 100%;}
     }
@@ -316,7 +317,8 @@
     .skill_wrap { /* position: relative; z-index: 2; */display: flex; flex-wrap: wrap; align-items: flex-start;}
     .skill_wrap .inner { height: fit-content; padding-top: 150px; padding-bottom: 150px; }
     .skill_wrap .inner .title_wrap { margin-bottom: 80px; text-align: center;}
-    .title_wrap h3 { font-size: 60px; margin-bottom: 20px; font-family: 'GmarketSansMedium'; }
+    .title_wrap h3 { font-size: 60px; margin-bottom: 20px; font-family: 'GmarketSansMedium'; position: relative; display: inline-block;}
+    .title_wrap h3:after{content:''; position: absolute; right: -20px; bottom: 9px; width: 12px; height: 12px; background-color: #00b4d8; border-radius: 50%;}
     .title_wrap p {letter-spacing: -1px;}
     
     .skill_list {display: flex; flex-wrap: wrap; align-items: flex-start; }
@@ -332,16 +334,12 @@
     
     .txt_box { letter-spacing: 0; padding-top: 25px; padding-bottom: 25px; }
     .txt_box p { font-family: 'GmarketSansMedium'; font-size: 30px; line-height: normal; font-weight: 600; color: #000; display: inline-block; padding-right: 10px; margin-bottom: 15px;}
-    /* .txt_box .txt_sm { font-size: 18px; padding-right: 0px; }
-    .txt_box .keyword { display: block; font-size: 18px; color: #fff;}
-    .txt_box .keyword span { display: inline-block; padding: 0 12px; border-radius: 90px; background: #393939; margin-right: 2px; line-height: 30px; margin-bottom: 6px; } */
     
     @media screen and (max-width: 1200px) {
         .title_wrap p { font-size: 18px; }
         .skill_box:hover > img { border-radius: 50px; }
         .skill_box img { height: 20vw; }
         .txt_box p { font-size: 18px; }
-        /* .txt_box .txt_sm { font-size: 16px; } */
         .txt_box { padding-top: 10px; }
     }
     @media screen and (max-width: 991px) {
@@ -355,9 +353,9 @@
         .txt_box { height: 100%; padding: 0; display: flex; flex-direction: column; }
     }
     @media screen and (max-width: 768px) {
-        /* .skill_wrap {margin-bottom: 100px;} */
         .title_wrap h3 { font-size: 34px; margin-bottom: 15px; }
-        .title_wrap p { font-size: 13px; }
+        .title_wrap h3:after{width: 8px; height: 8px; bottom: 5px; right: -13px;}
+        .title_wrap p { font-size: 14px; }
         .skill_box img { width: 138px; height: 138px; margin: 0 20px 0 0; border-radius: 14px; }
         .txt_box p { margin-bottom: 10px; }
         .txt_box .txt_sm { margin-bottom: 40px; font-size: 14px; font-weight: lighter; }
@@ -457,8 +455,7 @@
       }
       .project_head .title_wrap h3 {
         font-family: 'GmarketSansMedium';
-      }
-      
+      } 
       .estimate_head .title_wrap {
         margin-right: auto;
       }
@@ -664,7 +661,7 @@
         /* .project_head1 .total {display: none !important;} */
         .project_head1 {padding-top: 0px;}
         .project_head2 {display: flex !important;}
-        .project_head .total .num { font-size: 120px; margin-bottom: -30px; }
+        .project_head .total .num { font-size: 100px; margin-bottom: -30px; margin-right: 0;}
         .project_head .total > div span {font-size: 12px; margin-bottom: 40px;}
         .project_head .total > div img {width: 41px; height: 41px;}
     }

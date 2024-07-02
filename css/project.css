@@ -5,7 +5,8 @@ section .inner { padding: 0 4%; }
 /*project.css*/
 .projects-wrap .inner { padding-top: 197px; padding-bottom: 200px; }
 .projects-wrap .designer_head { margin-bottom: 80px; }
-.designer_head h3 { font-family: 'GmarketSansMedium'; font-size: 70px; line-height: 1.1; color: #393939; margin-bottom: 20px; }
+.designer_head h3 { font-family: 'GmarketSansMedium'; font-size: 70px; line-height: 1.1; color: #393939; margin-bottom: 20px; position: relative; display: inline-block;}
+.designer_head h3::after{content:''; position: absolute; right: -20px; bottom: 9px; width: 12px; height: 12px; background-color: #00b4d8; border-radius: 50%;}
 .designer_head p { color: #393939; font-size: 18px; }
 
 .colorCode{
@@ -216,6 +217,9 @@ ul.tabs li.current { background: #393939; color: #fff !important; }
   }
   .designer_head h3 {
     font-size: 45px;
+  }
+  .designer_head h3::after{
+    width: 10px; height: 10px; bottom: 7px; right: -13px;
   }
   .designer_head p {
     font-size: 14px;
