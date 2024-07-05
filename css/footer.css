@@ -1,28 +1,11 @@
 /* footer */
-.btn_top {
+.btn_top{
+    display: none;
     position: fixed;
-    /* right: 4rem;
-    bottom: 4rem; */
     right: 5.6rem;
     bottom: 5.6rem;
-    z-index: 99;
-    pointer-events: none;
-    opacity: 0;
-    transition: all 0.2s;
 }
-.btn_top.on {
-    pointer-events: auto;
-    opacity: 1;
-}
-.btn_top.default {
-    position: absolute;
-    right: 5.6rem;
-    bottom: 6.8rem;
-    pointer-events: auto;
-    opacity: 1;
-}
-.btn_top a {
-    position: relative;
+.btn_top a{
     display: block;
     width: 5.6rem;
     height: 5.6rem;

@@ -39,9 +39,11 @@
   <script src="js/gsap.min.js"></script><!-- gsap 애니메이션 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script><!-- gsap 애니메이션 -->
 
-  <link rel="stylesheet" type="text/css" href="css/aos.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/aos.css"> -->
   <link rel="icon" type="image/png" sizes="16x16" href="images/logo/favicon.png" />
-  <script type="text/javascript" src="https://www.kyobolifeinnostage.co.kr/wp-content/themes/kyobolife/assets/js/aos.js"></script>
+  <!-- <script type="text/javascript" src="https://www.kyobolifeinnostage.co.kr/wp-content/themes/kyobolife/assets/js/aos.js"></script> -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body class="home">
@@ -50,15 +52,15 @@
     <header id="header">
       <div class="header_wrap">
         <div class="inner">
-          <h1 class="logo">
+          <h1 class="logo" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
             <a href="index.html"><img src="images/logo/logo.svg" alt="logo"></a>
           </h1>
           <!-- nav -->
           <div class="nav">
             <ul class="navbar">
-              <li><a href="index.html"><span>메인</span></a>
+              <li data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-out-cubic" data-aos-duration="1000"><a href="index.html"><span>메인</span></a>
               </li>
-              <li><a href="project.html"><span>포트폴리오</span></a>
+              <li data-aos="fade-left" data-aos-offset="500" data-aos-easing="ease-out-cubic" data-aos-duration="1000"><a href="project.html"><span>포트폴리오</span></a>
               </li>
             </ul>
           </div>         
@@ -86,13 +88,7 @@
         <div class="wrap">
           <div id="primary" class="content-area">
             <main id="parallax__cont">
-              <section class="main">
-
-                <!-- <div class="animated-title" id="targetElement">
-                  <div class="track">&nbsp;Web Designer YEJI&nbsp;Web Designer YEJI&nbsp;Web Designer YEJI&nbsp;Web Designer YEJI&nbsp;Web Designer YEJI.&nbsp;Web Designer YEJI</div>                  
-                </div> -->
-                
-                <!-- visual-wrap -->
+              <section class="main">               
                 <section class="visual-wrap parallax__item" style="background-color: #edf2fb;">
                   <div class="inner">
                     <h1 class="visual_lead">
@@ -137,12 +133,12 @@
       
                     <div class="visual_bot">
                       <h2>
-                        <p>
+                        <p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-once="true">
                         사용자에게 인상적인 웹 UI/UX 경험을<br class="mo_br_768" />
                         제공함으로써 기업 또는 브랜드의 가치를<br/>
                         높이는 디자이너를 목표로 하고 있습니다.<br/>
                         </p>
-                        <p>
+                        <p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-once="true">
                         Our goal is to increase the value of<br class="mo_br_768" />
                         our company or brand by providing users<br/>
                         with an impressive Web UI/UX experience.<br/>
@@ -154,17 +150,17 @@
                 <!-- visual-wrap -->               
 
                 <section class="skill_wrap" style="background-color: #fff;">
-                  <div class="inner wow fadeIn" data-wow-duration="1.5s" data-wow-offset="300">
+                  <div class="inner">
                     
                     <div class="about_box">
-                      <div class="about_img"><img src="images/main/profile.jpg" alt="프로필 이미지"><div class="img_bg"></div></div>
+                      <div class="about_img" data-aos="flip-right" data-aos-offset="200" data-aos-easing="ease-in-out" data-aos-duration="500"><img src="images/main/profile.jpg" alt="프로필 이미지"><div class="img_bg"></div></div>
 
                       <div class="about_txt">
-                        <div class="title_wrap">
+                        <div class="title_wrap" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-out-cubic" data-aos-duration="500">
                           <h3>Profile</h3>
                           <p>간단한 프로필 및 경력사항입니다.</p>
                         </div>
-                        <table class="profile_list">                          
+                        <table class="profile_list" data-aos="fade-up" data-aos-offset="" data-aos-easing="ease-in-out" data-aos-duration="500">                          
                           <colgroup> 
                             <col width="23%">
                             <col width="77%">
@@ -209,14 +205,14 @@
 
                 <!-- canvas-wrap -->
                 <section class="skill_wrap" style="background-color: #fff;">
-                  <div class="inner wow fadeIn" data-wow-duration="1.5s" data-wow-offset="300"  style="padding-top: 0;">
+                  <div class="inner" style="padding-top: 0;">
                     <!-- title_wrap -->
-                    <div class="title_wrap">
+                    <div class="title_wrap" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-out" data-aos-duration="500">
                       <h3>Available Tools</h3>
                       <p>활용 가능한 툴입니다.</p>
                     </div>
 
-                    <div class="skill">
+                    <div class="skill" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-out" data-aos-duration="1000">
                       <ul class="skill_li">
                         <li><img src="images/main/skill01.png" alt=""><p>Photoshop</p></li>
                         <li><img src="images/main/skill02.png" alt=""><p>illustrator</p></li>
@@ -282,14 +278,14 @@
 
                 <!-- Project -->
                 <section class="project-wrap">
-                  <div class="inner wow fadeIn" data-wow-duration="1.5s" data-wow-offset="300">
+                  <div class="inner">
                     <div class="project_head project_head1">
-                      <div class="title_wrap">
+                      <div class="title_wrap" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-out" data-aos-duration="500">
                         <h3>Portfolio List</h3>
                         <p>포트폴리오 리스트입니다.</p>
                       </div>
                       <a class="total total1" href="project.html">
-                        <strong class="num">15</strong>
+                        <strong class="num">10</strong>
                         <div>
                           <span>(View all)</span>
                           <img
@@ -299,7 +295,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="project_body">
+                  <div class="project_body" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-out" data-aos-duration="500">
                     <div class="marquee-wrap marquee-wrap01">
                       <div class="marquee">
                         <div class="marquee_item">
@@ -491,8 +487,8 @@
                 <!-- Project -->
 
                 <section class="cooperation parallax__item">
-                  <div class="inner wow fadeInUp" data-wow-duration="1.5s" data-wow-offset="300">
-                    <div class="title">                     
+                  <div class="inner">
+                    <div class="title" data-aos="fade-up" data-aos-offset="" data-aos-easing="ease-in-out" data-aos-duration="1000">                   
                       <p>지속적인 발전을 통해<br>기업 또는 브랜드의 가치를<br>높이는 디자이너가 되겠습니다.<br>감사합니다.</p>                    
                     </div>                    
                   </div>
@@ -508,31 +504,32 @@
 
       </div><!-- #content -->
 
-      <div id="container_layer_alert"></div> <!-- layout_alert -->
       <footer id="footer" class="footer">
         <div class="inner">
-          <div class="btn_top on">
-            <a href="#">상단으로 이동<i class="fa fa-angle-up"></i></a>
+          <div class="btn_top">
+            <a href="#">           
+              <i class="fa-solid fa-arrow-up"></i>            
+            </a>
           </div>
+
           <h2>
             <img src="images/logo/logo.svg" alt="로고">
           </h2>
           <ul class="menu_list">
-              <li>
-                  <a href="index.html">메인</a>
-              </li>
-              <li>
-                  <a class="soon" href="project.html">포트폴리오</a>
-              </li>
+            <li>
+                <a href="index.html">메인</a>
+            </li>
+            <li>
+                <a class="soon" href="project.html">포트폴리오</a>
+            </li>
           </ul>
       
           <ul class="address_list">
-              <li>이 름 <span style="margin: 0 10px; color: #666;">|</span> 송예지</li>
-              <li>이메일 <span style="margin: 0 10px; color: #666;">|</span> <a href="mailto:jieon5783@gmail.com">syj3855@gmail.com</a></li>
-              <li>전화번호 <span style="margin: 0 10px; color: #666;">|</span> <a href="tel:010-5061-5783">010-9964-3855</a></li>
-              
-              <br><br>
-              <li>※ 본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</li>
+            <li>이 름 <span style="margin: 0 10px; color: #666;">|</span> 송예지</li>
+            <li>이메일 <span style="margin: 0 10px; color: #666;">|</span> <a href="mailto:jieon5783@gmail.com">syj3855@gmail.com</a></li>
+            <li>전화번호 <span style="margin: 0 10px; color: #666;">|</span> <a href="tel:010-5061-5783">010-9964-3855</a></li>          
+            <br><br>
+            <li>※ 본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</li>
           </ul>
         </div>
       </footer>

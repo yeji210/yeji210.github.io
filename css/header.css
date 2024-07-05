@@ -25,6 +25,13 @@
     border-color: #ededed;
     background: #fcfcfc;
 }
+
+/* .bg-blur{
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: hsla(0, 0%, 60%, 0.1) !important;
+} */
+
 .header_wrap .inner {
     position: relative;
     max-width: 1400px;
@@ -61,11 +68,6 @@
     font-family: var(--font-eng);
     z-index: 101;
 }
-/* .header_wrap .inner .ham_wrap,
-.header_wrap .inner .member.pc {
-    width: 11.9rem;
-    text-align: right;
-} */
 .header_wrap .inner .ham_wrap.mo {
     display: none;
 }

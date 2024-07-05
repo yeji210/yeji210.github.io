@@ -1,8 +1,6 @@
 
 $(document).ready(function(){
-
     
-
     $(document).ready(function(){
         $(window).scroll(function(){
           var scroll = $(window).scrollTop();
@@ -14,7 +12,6 @@ $(document).ready(function(){
           }
         })
       })
-
 
     // 원 모양의 div 요소를 마우스 커서 위치로 이동하는 부분
     const cursor = document.querySelector(".circle");
@@ -252,7 +249,11 @@ $(document).ready(function(){
     visualAnimResponsive();       
 
     //WOW
-    new WOW().init();
+    //new WOW().init();
+
+    AOS.init({
+        //disable: 'mobile'
+    });
 
     window.addEventListener('scroll', function() {
         var targetElement = document.getElementById('targetElement');
@@ -266,6 +267,29 @@ $(document).ready(function(){
         }
     });
 
-    
-   
+    // 상단으로이동
+    $('.btn_top').click(function() {
+        $('html,body').animate({
+            scrollTop: $('html,body').offset().top
+        }, 600);
+        return false;
+    });
+
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+            $('.btn_top').fadeIn();
+        } else {
+            $('.btn_top').fadeOut();
+        }
+    });
+
+    //헤더스타일변경
+    //$(window).scroll(function() {
+        //if ($(window).scrollTop() > 200) {
+           // $('#header').addClass('bg-blur')
+        //} else {
+         //   $('#header').removeClass('bg-blur')
+        //}
+    //});
+
 });
