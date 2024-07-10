@@ -1,17 +1,17 @@
 
 $(document).ready(function(){
     
-    $(document).ready(function(){
-        $(window).scroll(function(){
-          var scroll = $(window).scrollTop();
-          if (scroll > 1) {
-            $(".header_wrap").css("background" , "#fff");
-          }
-          else{
-            $(".header_wrap").css("background" , "transparent");   
-          }
-        })
-      })
+    // $(document).ready(function(){
+    //     $(window).scroll(function(){
+    //       var scroll = $(window).scrollTop();
+    //       if (scroll > 1) {
+    //         $(".header_wrap").css("background" , "#fff");
+    //       }
+    //       else{
+    //         $(".header_wrap").css("background" , "transparent");   
+    //       }
+    //     })
+    //   })
 
     // 원 모양의 div 요소를 마우스 커서 위치로 이동하는 부분
     const cursor = document.querySelector(".circle");
@@ -284,12 +284,12 @@ $(document).ready(function(){
     });
 
     //헤더스타일변경
-    //$(window).scroll(function() {
-        //if ($(window).scrollTop() > 200) {
-           // $('#header').addClass('bg-blur')
-        //} else {
-         //   $('#header').removeClass('bg-blur')
-        //}
-    //});
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 200) {
+            $('.header_wrap').addClass('bg-blur')
+        } else {
+            $('.header_wrap').removeClass('bg-blur')
+        }
+    });
 
 });
