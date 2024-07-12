@@ -1,4 +1,8 @@
 /* footer */
+
+.pc-br{display: block;}
+.m-br{display: none;}
+
 .btn_top{
     display: none;
     position: fixed;
@@ -111,6 +115,9 @@
 }
 
 @media (max-width: 1180px) {
+    .pc-br{display: none;}
+    .m-br{display: block;}
+
     .btn_top {
         right: calc(100vw * (50 / 1180));
         bottom: calc(100vw * (70 / 1180));

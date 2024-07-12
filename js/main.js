@@ -285,11 +285,11 @@ $(document).ready(function(){
 
     //헤더스타일변경
     $(window).scroll(function() {
-        if ($(window).scrollTop() > 200) {
+        if ($(window).scrollTop() > 10) {
             $('.header_wrap').addClass('bg-blur')
         } else {
             $('.header_wrap').removeClass('bg-blur')
         }
-    });
+    });        
 
 });
