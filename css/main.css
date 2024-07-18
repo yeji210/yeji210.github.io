@@ -171,6 +171,7 @@ will-change: transform;
 
 @media screen and (max-width: 991px) {
     .section02 .inner{padding-top: 100px; padding-bottom: 100px;}
+    .section02 .inner .title_wrap { margin-bottom: 50px; }
     .profile_box{flex-direction: column;}
     .profile_box .profile_img{width:100%; max-width: 300px; margin: 0 auto 100px; padding-right: 30px;}
     .profile_box .profile_txt{width:100%; padding-left: 0px;}  
@@ -218,7 +219,6 @@ will-change: transform;
     .txt_box { padding-top: 10px; }
 }
 @media screen and (max-width: 991px) {
-    .skill_wrap .inner .title_wrap { margin-bottom: 50px; }
     .skill_box { display: flex; flex-direction: row; width: 100%; align-items: center; margin: 0 !important; padding: 16px 0; border-bottom: 1px solid #000;}
     .skill_box:first-child { border-top: 1px solid #000; }
     .skill_box:hover > img { border-radius: 14px; }
@@ -556,12 +556,12 @@ transition: 0.5s ease;
     .contact_wrap{ height: auto; padding-top: 50px;}
     .contact_wrap .title_wrap{text-align: center; margin:20px 0;}
     .contact_box{ flex-direction: column; padding: 0 24px;}
-    .contact_img img{width: 180px;}
-    .contact_txt{ text-align: center; width: 100%; padding-left: 0; padding-top: 20px; padding-bottom: 40px;}
+    .contact_box .contact_img img{max-width: 180px;}
+    .contact_box .contact_txt{ text-align: center; width: 100%; padding-left: 0; padding-top: 20px; padding-bottom: 40px;}
     .sub_tit{margin-bottom: 25px;}
     .sub_tit h5{font-size: 20px;}
     .sub_tit p{font-size: 16px;}
-    .contact_item{justify-content: center;margin-bottom: 10px; font-size: 20px;}
+    .contact_item{justify-content: center; margin-bottom: 10px; font-size: 20px;}
     .contact_item span{font-size: 16px;}
     .copyright_txt{ font-size: 14px;}
 }

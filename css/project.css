@@ -3,7 +3,7 @@
 section .inner { padding: 0 4%; }
 
 /*project.css*/
-.projects_wrap .inner { padding-top: 197px; padding-bottom: 200px; }
+.projects_wrap .inner { padding-top: 197px; padding-bottom: 100px; }
 .projects_wrap .sub_tit { margin-bottom: 80px; }
 .sub_tit h3 { font-family: 'GmarketSansMedium'; font-size: 70px; line-height: 1.1; color: #393939; margin-bottom: 20px; position: relative; display: inline-block;}
 .sub_tit h3::after{ content:''; position: absolute; right: -20px; bottom: 9px; width: 12px; height: 12px; background-color: #00b4d8; border-radius: 50%;}
@@ -122,3 +122,40 @@ ul.tabs li.current { background: #393939; color: #fff !important; }
   #modalWrap .go_btn { font-size: 15px; padding: 12px 12px 9px 12px; }
   #closeBtn { top: -2%; font-size: 50px;}
 }
+
+/* ----------------------------------------- */
+/* -------------contact section------------- */
+.title_wrap { margin-bottom: 80px; text-align: center;}
+.title_wrap h3 { font-size: 60px; margin-bottom: 20px; font-family: 'GmarketSansMedium'; position: relative; display: inline-block;}
+.title_wrap h3:after{content:''; position: absolute; right: -20px; bottom: 9px; width: 12px; height: 12px; background-color: #00b4d8; border-radius: 50%;}
+.title_wrap p {letter-spacing: -1px;}
+
+.contact_wrap{ background: #F9F9F9; height: 100vh; position: relative;}
+.contact_wrap .title_wrap{text-align: left; margin-bottom: 30px;}
+.contact_box{ display: flex; width: 100%; height: 100%;justify-content: center; align-items: center; z-index: 2; position: relative;} 
+.contact_box .contact_img img{ max-width: 310px; width: 100%;}
+.contact_box .contact_txt{ padding-left: 110px;}
+.sub_tit{ margin-bottom: 50px;}
+.sub_tit h5{ font-size: 3rem; margin-bottom: 15px; font-weight: bold;}
+.sub_tit p{ font-size: 20px; color: #4E4E4E; line-height: 1.4;}
+
+.contact_li{ width: 100%;}
+.contact_item{ display: flex; align-items: center; color: #666666; margin-bottom: 15px; font-family: 'montserrat';}
+.contact_item span{ margin-left: 10px; font-size: 1.8rem;}
+.copyright_txt{ width: 100%; text-align: center; font-size: 1.6rem;}
+
+@media screen and (max-width:992px){
+    .contact_wrap{ height: auto; padding-top: 50px;}
+    .contact_wrap .title_wrap{text-align: center; margin:20px 0;}
+    .contact_box{ flex-direction: column; padding: 0 24px;}
+    .contact_box .contact_img img{max-width: 180px;}
+    .contact_box .contact_txt{ text-align: center; width: 100%; padding-left: 0; padding-top: 20px; padding-bottom: 40px;}
+    .sub_tit{margin-bottom: 25px;}
+    .sub_tit h5{font-size: 20px;}
+    .sub_tit p{font-size: 16px;}
+    .contact_item{justify-content: center; margin-bottom: 10px; font-size: 20px;}
+    .contact_item span{font-size: 16px;}
+    .copyright_txt{ font-size: 14px;}
+}
+/* -------------contact section------------- */
+/* ----------------------------------------- */
