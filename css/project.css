@@ -157,5 +157,10 @@ ul.tabs li.current { background: #393939; color: #fff !important; }
     .contact_item span{font-size: 16px;}
     .copyright_txt{ font-size: 14px;}
 }
+
+@media screen and (max-width:767px){
+    .title_wrap h3 { font-size: 34px; margin-bottom: 15px; }
+    .title_wrap h3:after{width: 8px; height: 8px; bottom: 5px; right: -13px;}
+}
 /* -------------contact section------------- */
 /* ----------------------------------------- */
