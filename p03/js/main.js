@@ -170,58 +170,44 @@ $(document).ready(function(){
     var animTimeouts = [];
     var animIntervals = [];
 
-    function visualAnim(a, b, c) {
+    function visualAnim(a, b) {
         animTimeouts.push(
         setTimeout(() => {
             animTimeouts.push(
             setTimeout(() => {
                 mainLead[0].classList.add("on");
                 mainLead[1].classList.remove("on");
-                mainLead[2].classList.remove("on");
-                mainLeadBox.style.width = a + 80 + "px";
+                mainLeadBox.style.width = a  + 200 + "px";
             }, 0)
             );
             animTimeouts.push(
             setTimeout(() => {
                 mainLead[0].classList.remove("on");
-                mainLeadBox.style.width = b + 70 + "px";
+                mainLeadBox.style.width = b - 100 + "px";
                 mainLead[1].classList.add("on");
             }, 3000)
             );
-            animTimeouts.push(
-            setTimeout(() => {
-                mainLead[1].classList.remove("on");
-                mainLeadBox.style.width = c + 50 + "px";
-                mainLead[2].classList.add("on");
-            }, 6000)
-            );
+            
             animIntervals.push(
             setInterval(() => {
                 animTimeouts.push(
                 setTimeout(() => {
                     mainLead[0].classList.add("on");
                     mainLead[1].classList.remove("on");
-                    mainLead[2].classList.remove("on");
-                    mainLeadBox.style.width = a + 80 + "px";
+                    mainLeadBox.style.width = a + 200 + "px";
                 }, 0)
                 );
                 animTimeouts.push(
                 setTimeout(() => {
                     mainLead[0].classList.remove("on");
-                    mainLeadBox.style.width = b + 70 + "px";
+                    mainLeadBox.style.width = b - 100 + "px";
                     mainLead[1].classList.add("on");
                 }, 3000)
                 );
-                animTimeouts.push(
-                setTimeout(() => {
-                    mainLead[1].classList.remove("on");
-                    mainLeadBox.style.width = c + 50  + "px";
-                    mainLead[2].classList.add("on");
-                }, 6000)
-                );
-            }, 9000)
+                
+            }, 6000)
             );
-        }, 1200)
+        }, 600)
         );
     }
     

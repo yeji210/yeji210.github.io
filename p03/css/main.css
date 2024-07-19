@@ -13,10 +13,10 @@ font-style: normal;
 
 .section { width: 100%; /* height: 100vh; */ position: relative; display: flex; align-items: center; justify-content: center;}
 
-#dung{
+.dung1{
 background:url(../images/main/icon01.svg) no-repeat center center;
 position:absolute; 
-top:25%;
+top:15%;
 right:10%;
 animation:ani 1s infinite alternate;
 width: 170px;
@@ -27,7 +27,7 @@ height: 170px;
 100%{transform:translate(0,50px);}
 }  
 
-#dung02{
+.dung2{
 background:url(../images/main/icon04.svg) no-repeat center center;
 position:absolute; 
 top:40%;
@@ -41,7 +41,7 @@ height: 100px;
 100%{transform:translate(0,50px);}
 } 
 
-#dung03{
+.dung3{
     background:url(../images/main/icon03.svg) no-repeat center center;
     position:absolute; 
     top:70%;
@@ -73,19 +73,15 @@ section .inner { z-index: 2; height: 100vh; max-width: 1400px; position: relativ
 /* --------------------------------------- */
 /* -------------visual section------------- */
 .visual-wrap .inner {  display: flex; align-items: flex-end; }
-.visual_lead { white-space: nowrap; display: flex; align-items: center; font-family: 'GmarketSansMedium'; font-size: 80px; font-weight: 900;
+.visual_lead { white-space: nowrap; display: flex; align-items: center; font-family: 'GmarketSansBold'; font-size: 80px; font-weight: 900;
 color: #393939; position: absolute; top: 45%; transform: translate(0, -50%); z-index: 1; }
 .visual_lead .lead_left, .visual_lead .lead_right { display: flex; align-items: center; position: relative; font-family: 'GmarketSansBold'; line-height: 1.2; letter-spacing: 2px;}
 
-.lead_change { width: 50px; position: relative; height: 70px; line-height: 70px; transition: 0.5s ease; overflow: hidden; padding: 0 30px; }
-.lead_change::before { content: "{"; position: absolute; left: 0; }
-.lead_change::after { content: "}"; position: absolute; right: 0; }
-.lead_change > div { position: absolute; display: flex; align-items: center; }
-.lead_change > div > span { opacity: 0; transform: translateY(105.5px); transition: 0.3s ease; }
-.lead_change > div.on span { opacity: 1; transform: translate(0);}
+.lead_change { width: 60px; position: relative; height: 100px; line-height: 100px; transition: 0.5s ease; overflow: hidden;}
 
-.visual_lead .lead_dash { display: flex; align-items: center; }
-.visual_lead .lead_dash i { width: 200px; height: 1px; background: #707070; margin: 0 40px; display: block; }
+.lead_change > div { position: absolute; display: flex; align-items: center; }
+.lead_change > div > span { opacity: 0; transform: translateY(100px); transition: 0.3s ease; }
+.lead_change > div.on span { opacity: 1; transform: translate(0);}
 
 .lead_change > div.on > span:nth-child(1) {
 transition: -webkit-transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1) 0.05s;
@@ -148,16 +144,6 @@ transition: transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s,
     -webkit-transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
 }
 
-.Home__HeroTitleLineMaskText .char {
-display: inline-block;
--webkit-transform: translate3d(0, -400%, 0);
-transform: translate3d(0, -400%, 0);
-will-change: transform;
-}
-
-@keyframes identifier {
-}
-
 .visual_bot { display: flex; align-items: flex-end; width: 100%; margin-bottom: 82px; z-index: 1; }
 .visual_bot h2 { display: flex; margin-right: auto; letter-spacing: -1px; }
 .visual_bot h2 p { font-size: 18px; font-weight: 500; color: #393939; line-height: 1.4; position: relative; white-space: nowrap; font-family: "Pretendard GOV Variable", "Pretendard GOV";}
@@ -171,7 +157,6 @@ will-change: transform;
 @media screen and (max-width: 1200px) {
     .visual_lead { top: 40%; flex-direction: column; align-items: flex-start;  font-size: 50px;}
     .visual_lead .lead_dash {display: none;}
-    .lead_change { margin: 20px 0 20px; padding: 0 22px; }
 }
 @media screen and (max-width: 768px) {
     .visual_bot { margin-bottom: 50px;}
@@ -587,7 +572,7 @@ transition: 0.5s ease;
 
 /* ----------------------------------------- */
 /* -------------contact section------------- */
-.contact_wrap{ background: #F9F9F9; height: 100vh; position: relative;}
+.contact_wrap{ background: #fff; height: 100vh; position: relative;}
 .contact_wrap .title_wrap{text-align: left; margin-bottom: 30px;}
 .contact_box{ display: flex; width: 100%; height: 100%;justify-content: center; align-items: center; z-index: 2; position: relative;} 
 .contact_box .contact_img img{ max-width: 310px; width: 100%;}
