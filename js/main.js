@@ -28,8 +28,8 @@ $(document).ready(function(){
     const pi = Math.PI;
     const points = 12;
     const radius = 300 * dpr;
-    const h = 800 * dpr;
-    const w = 800 * dpr;
+    const h = 900 * dpr;
+    const w = 900 * dpr;
     const center = {
         x: w / 2 * dpr,
         y: h / 2 * dpr
