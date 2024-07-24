@@ -170,14 +170,15 @@ $(document).ready(function(){
     var animTimeouts = [];
     var animIntervals = [];
 
-    function visualAnim(a, b) {
+    function visualAnim(a, b, c) {
         animTimeouts.push(
         setTimeout(() => {
             animTimeouts.push(
             setTimeout(() => {
                 mainLead[0].classList.add("on");
                 mainLead[1].classList.remove("on");
-                mainLeadBox.style.width = a  + 200 + "px";
+                mainLead[2].classList.remove("on");
+                mainLeadBox.style.width = a + 200 + "px";
             }, 0)
             );
             animTimeouts.push(
@@ -187,13 +188,20 @@ $(document).ready(function(){
                 mainLead[1].classList.add("on");
             }, 3000)
             );
-            
+            animTimeouts.push(
+            setTimeout(() => {
+                mainLead[1].classList.remove("on");
+                mainLeadBox.style.width = c + 350 + "px";
+                mainLead[2].classList.add("on");
+            }, 6000)
+            );
             animIntervals.push(
             setInterval(() => {
                 animTimeouts.push(
                 setTimeout(() => {
                     mainLead[0].classList.add("on");
                     mainLead[1].classList.remove("on");
+                    mainLead[2].classList.remove("on");
                     mainLeadBox.style.width = a + 200 + "px";
                 }, 0)
                 );
@@ -204,12 +212,20 @@ $(document).ready(function(){
                     mainLead[1].classList.add("on");
                 }, 3000)
                 );
-                
-            }, 6000)
+                animTimeouts.push(
+                setTimeout(() => {
+                    mainLead[1].classList.remove("on");
+                    mainLeadBox.style.width = c + 350  + "px";
+                    mainLead[2].classList.add("on");
+                }, 6000)
+                );
+            }, 9000)
             );
-        }, 600)
+        }, 1200)
         );
     }
+
+    
     
 
     // 화면크기에 따른 폰트사이즈 변경
