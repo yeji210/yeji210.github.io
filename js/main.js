@@ -191,7 +191,7 @@ $(document).ready(function(){
             animTimeouts.push(
             setTimeout(() => {
                 mainLead[1].classList.remove("on");
-                mainLeadBox.style.width = c + 350 + "px";
+                mainLeadBox.style.width = c + 370 + "px";
                 mainLead[2].classList.add("on");
             }, 6000)
             );
@@ -215,7 +215,7 @@ $(document).ready(function(){
                 animTimeouts.push(
                 setTimeout(() => {
                     mainLead[1].classList.remove("on");
-                    mainLeadBox.style.width = c + 350  + "px";
+                    mainLeadBox.style.width = c + 370 + "px";
                     mainLead[2].classList.add("on");
                 }, 6000)
                 );
