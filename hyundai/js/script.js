@@ -1,14 +1,28 @@
-//카운트
-$(document).ready(function () {
+$(document).ready(function() {
 
+  // Header에 마우스 오버 이벤트
+  $('#header').hover(
+      function() {
+          $(this).addClass('bg_white');
+      }, 
+      function() {
+          if ($(window).scrollTop() <= 10) {
+              $(this).removeClass('bg_white');
+          }
+      }
+  );
 
-  var swiper = new Swiper(".mySwiper", {
-    pagination: {
-      el: ".swiper-pagination",
-    },
+  // 스크롤 이벤트
+  $(window).scroll(function() {
+      if ($(window).scrollTop() > 10) {
+          $('#header').addClass('bg_white');
+      } else {
+          $('#header').removeClass('bg_white');
+      }
   });
 
 
+  //카운트
   var options = {
     root: null,
     rootMargin: '0px',
@@ -22,7 +36,7 @@ $(document).ready(function () {
         var countTo = parseInt($this.attr('data-count'), 10);
         var increment = parseInt($this.attr('data-increment'), 10);
         var current = 0;
-        var duration = 2000; // 총 애니메이션 시간 (밀리초)
+        var duration = 3000; // 총 애니메이션 시간 (밀리초)
         var intervalTime = Math.ceil(duration / (countTo / increment));
 
         var interval = setInterval(function () {
@@ -131,9 +145,50 @@ var commonScript = (function(){
 })();
 
 
-
 $(window).on("load", function(){
   commonScript.scrollTriggerFn(); // 스크롤 트리거 모션
 });
+
+
+// 호버 이미지변경
+$(document).ready(function(){
+  $('.a01').mouseenter(function(){
+      $('.recruit_bg').css('background-image', "url('./img/recruit02.jpg')");
+  }).mouseleave(function(){
+      $('.recruit_bg').css('background-image', "url('./img/recruit02.jpg')");
+  });
+
+  $('.a02').mouseenter(function(){
+      $('.recruit_bg').css('background-image', "url('./img/recruit01.jpg')");
+  }).mouseleave(function(){
+      $('.recruit_bg').css('background-image', "url('./img/recruit01.jpg')");
+  });
+});
+
+// 상단으로이동
+$('.btn_top').click(function() {
+  $('html,body').animate({
+      scrollTop: $('html,body').offset().top
+  }, 600);
+  return false;
+});
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 10) {
+      $('.btn_top').fadeIn();
+  } else {
+      $('.btn_top').fadeOut();
+  }
+});
+
+
+new WOW().init();
+
+
+
+
+
+
+
 
 
