@@ -1,0 +1,213 @@
+@charset "utf-8";
+
+header{
+  font-family: "Montserrat", sans-serif;
+  height: 70px; 
+  background-color: #fff;
+  width: 100%;
+}
+header .inner{
+  width: 1200px; margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+header .logo a{
+  display: block;
+  width: 70px; height: 70px;
+  background: url(../img/logo.png) no-repeat center / cover;
+  font-size: 0;
+  color: transparent;
+}
+header .gnb{
+  position: absolute; 
+  top:50%; left: 100px; transform: translateY(-50%);
+  height: 70px;
+}
+header .gnb > ul > li{
+  float: left;
+  position: relative;
+}
+header .gnb > ul > li > a{
+  display: block;
+  margin-right: 30px;
+  font-size: 14px;
+  line-height: 70px;
+}
+header .gnb > ul > li:hover > a{
+  color: #00a7e1;
+}
+
+
+/* submenu */
+
+header .gnb > ul > li > .subMenu{
+  background-color: #fff;
+  position: absolute;
+  top:70px; left: -10px;
+  width: 135px;
+  display: none;
+  padding: 0 5px 5px 5px;
+ 
+}
+header .gnb > ul > li > .subMenu li a{
+  display: block;
+  height: 40px;
+  padding: 0 10px;
+  line-height: 40px;
+}
+header .gnb > ul > li > .subMenu li:hover a{
+  color: #00a7e1;
+}
+
+
+
+/* quickMenu */
+
+.quick{
+  position: absolute;
+  top:50%; right: 20px; transform: translateY(-50%);
+}
+.quick span{
+  display: block;
+  width: 25px; height: 2px;
+  background-color: #333;
+  margin-bottom: 7px;
+  color: transparent; font-size: 0;
+}
+.quick span:last-child{
+  margin-bottom: 0;
+}
+.quick:hover span{
+  background-color: #00a7e1;
+}
+button{
+  cursor: pointer;
+}
+
+/* quick click할때 */
+
+.leftWrap{
+  width: 300px; height: 100%;
+  position: fixed; top:0; right: -300px; 
+  z-index: 99;
+  background-color: #00a7e1;
+}
+.close1{
+  position: absolute; top: 20px; left: 20px; 
+  width: 30px; height: 30px; 
+  background-color: #fff; 
+  border-radius: 50%; 
+  font-size: 0;
+}
+.close1::after{
+  content: 'X'; 
+  font-size: 18px; color: #00a7e1; 
+  line-height: 30px; 
+  display: block; 
+  text-align: center; 
+  font-weight: bold;
+}
+.q_menu{padding: 80px 0;}
+.q_menu ul li a{
+  width: 300px;
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+  text-align: center;
+  transition: color 0.3s;
+}
+.q_menu ul li a:hover{color: #333;}
+
+.section1{
+  margin-bottom: 100px;
+}
+.section1 img{
+  width: 100%;
+}
+
+/* section2 */
+
+.section2 .inner{
+  width: 1200px; margin: 0 auto;
+}
+.section2 .box1, .section2 .box2{
+  float: left;
+  height: 500px;
+}
+.section2 .box1{
+  width: calc(60% - 50px);
+  margin-right: 50px;
+}
+.section2 h3{
+  margin: 50px 0;
+  font-size: 26px;
+}
+.section2 p{
+  line-height: 1.6;
+}
+
+.section2 .box2{
+  background:url(../img/img2.jpg) no-repeat right / cover;
+  width: 40%;
+} 
+
+.section2 .box3, .section2 .box4{
+  float: left;
+  height: 500px;
+  margin: 100px 0;
+
+}
+.section2 .box3{
+  background:url(../img/sub_story2.jpg) no-repeat right / cover;
+  width: 40%;
+} 
+.section2 .box4{
+  width: calc(60% - 50px);
+  margin-left: 50px;
+}
+
+
+
+
+
+
+/* footer */
+footer{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  height: 300px;
+  border-top: 1px solid #ccc;
+  padding-top: 50px;
+}
+footer img.f_logo{
+  width: 70px;
+  margin: 0 auto;
+}
+
+footer ul li{
+  display: inline-block;
+  margin-right: 20px;
+}
+footer ul li a{
+  font-size: 14px;
+  color: #777;
+}
+footer ul li:hover a{
+  color: #00a7e1;
+}
+.sns{
+  margin-top: 30px;
+}
+.sns a{
+  display: inline-block;
+  width: 30px; height: 30px;
+}
+.sns a img{
+  width: 100%;
+}
+.sns a:hover{
+  opacity: 0.5;
+}
+

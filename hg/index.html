@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>현대건설</title>
+
+  <link href="css/reset.css" rel="stylesheet" type="text/css">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <link href="css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script type="text/javascript" src="js/html5shiv.min.js"></script>
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="js/gsap.min.js"></script>
+  <script type="text/javascript" src="js/ScrollTrigger.min.js"></script>
+  <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+  <script type="text/javascript" src="js/waypoints.min.js"></script>
+
+  <script type="text/javascript" src="js/script.js"></script>
+  <!-- <script type="text/javascript" src="js/app.bundle.js"></script> -->
+
+
+</head>
+<body>
+  <div id="wrap">
+    <header id="header" data-dir="-1" class="opaque">
+      <div class="header-inner">
+        <div class="container">
+          <div class="header-content">
+            <h1 class="brand">
+              <a href="#">
+                <img src="img/logo.svg" alt="">
+              </a>
+            </h1>
+            <button class="nav-toggle">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M27 14.25H3V15.75H27V14.25Z" fill="currentColor" class="line1"></path>
+                <path d="M27 14.25H3V15.75H27V14.25Z" fill="currentColor" class="line2"></path>
+                <path d="M27 14.25H3V15.75H27V14.25Z" fill="currentColor" class="line3"></path>
+              </svg>
+            </button>
+            <nav id="nav">
+              <ul class="gnb">
+                <li>
+                  <a class="depth1" href="#"><span>회사소개</a>
+                  <div class="depth2">
+                    <ul>
+                      <li><a href="#"><span>About Yanolja</span></a></li>
+                      <li><a href="#"><span>Our Story</span></a></li>
+                      <li><a href="#"><span>Leadership</span></a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" class="depth1"><span>사업소개</span></a>
+                  <div class="depth2">
+                    <ul>
+                      <li><a href="#"><span>Transaction Solutions</span></a></li>
+                      <li><a href="#"><span>Subscription Solutions</span></a></li>
+                      <li><a href="#"><span>Data Solutions</span></a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" class="depth1"><span>투자·가치경영</span></a>
+                  <div class="depth2">
+                    <ul>
+                      <li><a href="#"><span>Transaction Solutions</span></a></li>
+                      <li><a href="#"><span>Subscription Solutions</span></a></li>
+                      <li><a href="#"><span>Data Solutions</span></a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" target="_blank" class="depth1"><span>인재채용 <i class="external"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.8333 4.16663V15.8333M15.8333 4.16663H4.16663M15.8333 4.16663L4.16663 15.8333" stroke="currentColor" stroke-width="2"></path></svg></i></span></a>
+                </li>
+              </ul>
+              <div class="utils">
+                <div class="langs">
+                  <ul>      
+                    <li class="current"><a class="linkKO" href="#">KO</a></li>
+                    <li class="split"><i></i></li>
+                    <li><a class="linkEN" href="#">EN</a></li> 
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <header style="display: none;">
+      <div class="inner">
+        <h1 class="logo"><a href="index.html"><img src="img/logo.png" alt=""></a></h1>
+        <div class="gnb">
+          <ul>
+            <li><a href="#">회사소개</a>
+              <ul class="subMenu">
+                <li><a href="#">개요</a></li>
+                <li><a href="#">CEO 메세지</a></li>
+                <li><a href="#">경영이념</a></li>
+                <li><a href="#">연혁</a></li>
+                <li><a href="#">수상·인증</a></li>
+                <li><a href="#">CI소개</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#">사업소개</a>
+              <ul class="subMenu">
+                <li><a href="#">물류</a></li>
+                <li><a href="#">해운</a></li>
+                <li><a href="#">유통</a></li>
+                <li><a href="#">미래 신사업</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#">투자·가치경영</a>
+              <ul class="subMenu">
+                <li><a href="#">ESG경영 성과</a></li>
+                <li><a href="#">탄소중립</a></li>
+                <li><a href="#">사회책임경영</a></li>
+                <li><a href="#">고객만족경영</a></li>
+                <li><a href="#">안전보건환경 경영방침</a></li>
+                <li><a href="#">품질경영</a></li>
+                <li><a href="#">공정거래</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#">인재채용</a>
+              <ul class="subMenu">
+                <li><a href="#">WHY GLOVIS</a></li>
+                <li><a href="#">MEET GLOVIS</a></li>
+                <li><a href="#">직무소개</a></li>
+                <li><a href="#">인사제도</a></li>
+                <li><a href="#">채용전형</a></li>
+                <li><a href="#">채용공고</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- .gnb-->
+        <div class="login"><a href="#">로그인</a></div>
+        <!-- <div class="quick">
+          <button type="button" class="open1">
+            <span></span>
+            <span>메뉴열기</span>
+            <span></span>
+          </button>
+        </div> -->
+        <!--.quick-->
+        <div class="leftWrap">
+          <a href="#" class="close1">닫기</a>
+          <div class="q_menu">
+            <ul>
+              <li><a href="#">LOGIN</a></li>
+              <li><a href="#">JOIN MENBERSHIP</a></li>
+              <li><a href="#">MY PAGE</a></li>
+              <li><a href="#">CART</a></li>
+              <li><a href="#">EVENT</a></li>
+            </ul>
+          </div>
+        </div><!--.leftWrap-->
+      </div><!--.inner-->
+    </header>
+
+
+
+    <section class="visual">
+      <video class="bg-media" playsinline="playsinline" webkit-playsinline="" autoplay="autoplay" muted="muted" loop="loop" poster="">
+        <source src="img/visual.mp4" type="video/mp4">
+      </video>
+      <div class="txt_wrap">
+        <h3>현대건설은 <br>새로운 가치를 창조합니다</h3>
+        <p>보다 나은 세상을 건설하고, 끊임없는 혁신과 도전으로 더 나은 미래를 열어갑니다</p>
+     </div>
+    </section><!--.visual-->
+
+
+    <section class="section sec02">
+      <div class="inner">
+          <div class="padding-section-large">
+              <div class="container-large">
+                <div class="title_wrap">
+                  <h2 class="tit">현대건설은 새로운 가치를 창조합니다</h2>                 
+                </div>
+                  <div class="content-wrap">
+                      <div class="counter-list-wrap">
+                          <div class="count-block-item">
+                            <div class="counter-wrap">
+                                <h3 class="counter-text">
+                                  <div class="counterup" data-count="77" data-increment="5">0</div>
+                                </h2>
+                                <p>주년</p>
+                            </div>
+                            <p class="paragraph-1-25">창립일</p>
+                          </div>
+                          <div class="count-block-item">
+                              <div class="counter-wrap">
+                                <h3 class="counter-text">
+                                  <div class="counterup" data-count="60" data-increment="5">0</div>
+                                </h3>
+                                <p>+</p>
+                              </div>
+                              <p class="paragraph-1-25">진출국가</p>
+                          </div>
+                          <div class="count-block-item">
+                              <div class="counter-wrap">
+                                <h3 class="counter-text">
+                                  <div class="counterup" data-count="880" data-increment="20">0</div>
+                                </h3>
+                                <p>+</p>
+                              </div>
+                              <p class="paragraph-1-25">글로벌 프로젝트</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <!-- sec01 -->
+    <section class="section sec01">
+      <div class="inner">
+         
+        <div class="title_wrap">
+          <div class="tit_en">Incheon Airport</div>
+          <h2 class="tit">세계인이 사랑하는 인천공항, 국민에게 신뢰받는 공항기업</h2>
+          <p class="sub_txt">끊임없는 혁신과 가치 창출을 통해 더 큰 고객감동과 새로운 성장을 이루겠습니다.</p>
+        </div>
+        
+        <div class="content_wrap">
+          <div class="con_box">
+            <a href="#" class="box">
+              <div class="g_bg">
+                <div class="content_txt">
+                  <div class="img_box">
+                    <img src="https://cdn.prod.website-files.com/649bc60a5baf71dfbdca9f99/649bc60a5baf71dfbdca9fae_Cargo%20Insight-icon.svg" loading="lazy" alt="">
+                  </div>
+                  <h3>Cargo Insight</h3>
+                  <p>물류</p>
+                  <div class="btn_more">Read more →</div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="con_box">
+            <a href="#" class="box">
+              <div class="g_bg">
+                <div class="content_txt">
+                  <div class="img_box">
+                    <img src="https://cdn.prod.website-files.com/649bc60a5baf71dfbdca9f99/649bc60a5baf71dfbdca9fae_Cargo%20Insight-icon.svg" loading="lazy" alt="">
+                  </div>
+                  <h3>Cargo Insight</h3>
+                  <p>해운</p>
+                  <div class="btn_more">Read more →</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="con_box">
+            <a href="#" class="box">
+              <div class="g_bg">
+                <div class="content_txt">
+                  <div class="img_box">
+                    <img src="https://cdn.prod.website-files.com/649bc60a5baf71dfbdca9f99/649bc60a5baf71dfbdca9fae_Cargo%20Insight-icon.svg" loading="lazy" alt="">
+                  </div>
+                  <h3>Cargo Insight</h3>
+                  <p>유통</p>
+                  <div class="btn_more">Read more →</div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="con_box">
+            <a href="#" class="box">
+              <div class="g_bg">
+                <div class="content_txt">
+                  <div class="img_box">
+                    <img src="https://cdn.prod.website-files.com/649bc60a5baf71dfbdca9f99/649bc60a5baf71dfbdca9fae_Cargo%20Insight-icon.svg" loading="lazy" alt="">
+                  </div>
+                  <h3>Cargo Insight</h3>
+                  <p>미래신사업</p>
+                  <div class="btn_more">Read more →</div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>          
+      </div>
+    </section>
+    <!-- //sec01 -->
+
+   
+
+  <section class="section sec03" style="min-height: 729px;">
+    <div class="inner">
+    <div class="">
+      <h2 class="tit">인천공항은<br>세계 최고 ESG 허브로 비상합니다.</h2>
+    </div>
+
+    <div class="esg_wrap">
+      <div class="img_txt_wrap scroll_motion active">
+        <div class="fix_area">
+          <div class="change_img">
+            <div class="img_box">
+              <div class="img_li" style="top: 0%;">
+                <div class="img" style="background-image: url(img/esg01.jpg)"></div>
+              </div>
+              <div class="img_li" style="top: 0%;">
+                <div class="img" style="background-image: url(img/esg02.jpg)"></div>
+              </div>
+              <div class="img_li">
+                <div class="img" style="background-image: url(img/esg03.jpg)"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="txt_wrap">
+            <div class="txt_li scroll_motion active">
+              <div class="txt_box">
+                <div class="esg_txt">
+                  <h2>Environment</h2>
+                  <h3>저탄소 친환경 공항 구현</h3>
+                  <p> 에너지 소비에서 에너지 자립 공항으로 도약을 위해<br> 2040년까지 신재생 에너지 100% 전환 등<br> 저탄소 친환경 공항 구현</p>
+                  <a href="#" class="btn_more">view more →</a>
+                </div>                
+              </div>
+            </div>
+
+            <div class="txt_li scroll_motion active"> 
+              <div class="txt_box" >
+                <div class="esg_txt">
+                  <h2>Social</h2>
+                  <h3>사람중심의 사회책임 경영</h3>
+                  <p>인천공항은 따뜻한 세상을 위해<br> 2030년까지 신규 일자리 12만 명
+                  창출 등<br>  포용적 상생 가치를 실천합니다.</p>
+                  <a href="#" class="btn_more">view more →</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="txt_li scroll_motion active">           
+              <div class="txt_box" >
+                <div class="esg_txt">
+                  <h2>Governance</h2>
+                  <h3>투명하고 공정한 지배구조 확립</h3>         
+                  <p> 이해관계자의 의사결정 참여와 윤리경영 강화를 위해<br>  인천공항은 2025년까지 공공기관 종합 청렴도 1등급 달성을<br>  목표로 합니다.</p>
+                  <a href="#" class="btn_more">view more →</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    
+    </div>
+    </div>
+   
+
+
+</section>
+    
+
+    <footer>
+      <img src="img/logo.png" alt="로고 이미지" class="f_logo">
+      <div>
+        <ul>
+          <li><a href="#">Membership</a></li>
+          <li><a href="#">Custormer</a></li>
+          <li><a href="#">Conpany</a></li>
+          <li><a href="#">Custormer</a></li>
+        </ul>
+      </div>
+      <div class="sns">
+        <a href="#"><img src="img/facebook.svg" alt="페이스북 바로가기"></a>
+        <a href="#"><img src="img/twit.svg" alt="트위터 바로가기"></a>
+        <a href="#"><img src="img/insta.svg" alt="인스타그램 바로가기"></a>
+      </div><!--.sns-->
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <script>
+      $(document).ready(function(){
+
+        // gnb 메뉴
+        $(".gnb > ul > li").hover(function(){
+          $(this).find(".subMenu").stop().slideDown(300);
+        }, function(){
+          $(this).find(".subMenu").stop().slideUp(300);
+        })
+
+        //quick 메뉴
+        $(".open1").click(function(){
+          // $(".leftWrap").css("left" , "0")
+          $(".leftWrap").animate({
+            "right":"0"
+          },500,"swing");
+        });
+
+        $(".close1").click(function(){
+          $(".leftWrap").animate({
+            "right":"-300px"
+          },500);
+        });
+
+        var swiper = new Swiper(".mySwiper1", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".mySwiper1 .swiper-button-next",
+          prevEl: ".mySwiper1 .swiper-button-prev",
+        },
+      });
+
+      var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        slidesPerGroup: 1,
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".mySwiper2 .swiper-button-next",
+          prevEl: ".mySwiper2 .swiper-button-prev",
+        },
+      });
+
+      });
+
+      
+
+    </script>
+
+    <!-- smooth 스크롤 -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.9/SmoothScroll.min.js'></script>
+    <script>
+        SmoothScroll({
+            // Scrolling Core
+            animationTime: 1000,
+            // [ms]
+            stepSize: 100,
+            // [px]
+
+            // Acceleration
+            accelerationDelta: 50,
+            // 50
+            accelerationMax: 3,
+            // 3
+
+            // Keyboard Settings
+            keyboardSupport: true,
+            // option
+            arrowScroll: 50,
+            // [px]
+
+            // Pulse (less tweakable)
+            // ratio of &quot;tail&quot; to &quot;acceleration&quot;
+            pulseAlgorithm: true,
+            pulseScale: 4,
+            pulseNormalize: 1,
+
+            // Other
+            touchpadSupport: false,
+            // ignore touchpad by default
+            fixedBackground: true,
+            excluded: ''
+        });
+        //# sourceURL=pen.js
+    </script>
+   
+  </div><!--#wrap-->
+</body>
+</html>
