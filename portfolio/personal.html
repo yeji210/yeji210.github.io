@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta property="og:url" content="https://yeji210.github.io/">
+  <meta property="og:title" content="예지 | 웹 포트폴리오">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/logo/og_img.png">
+  <meta property="og:description" content="송예지의 웹 포트폴리오입니다:)">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico" />
+  <title>예지 포트폴리오</title>
+  
+  <!-- 외부 스크립트 및 스타일시트 -->
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.473/build/spline-viewer.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/header.css">
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+  <link rel="stylesheet" type="text/css" href="css/project.css">
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-gov-dynamic-subset.min.css" /><!-- 폰트 프리텐다드 -->
+  <!-- Bootstrap icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  
+  <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/wow.min.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <script src="js/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+
+  <div id="page" class="site">
+
+    <header id="header">
+      <div class="header_wrap">
+        <div class="inner">
+          <h1 class="logo">
+            <a href="index.html"><img src="images/logo/logo.svg" alt="logo"></a>
+          </h1>
+          <!-- nav -->
+          <div class="nav">
+            <ul class="navbar">
+              <li><a href="index.html"><span>메인</span></a>
+              </li>
+              <li><a href="project.html"><span>포트폴리오</span></a>
+              </li>
+              <li><a href="personal.html"><span>개인작업물</span></a>
+              </li>
+            </ul>
+          </div>         
+          <div class="ham_wrap">
+            <input type="checkbox" id="check_box" />
+            <label for="check_box">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+            <div class="side_menu">
+              <ul>
+                <li><a href="index.html">Main</a></li>
+                <li><a href="project.html">Portfolio</a></li>
+                <li><a href="personal.html">Personal</a></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- nav -->
+      </div>
+    </header>
+    
+
+    <div class="site-content-container">
+      <div id="content" class="site-content">
+
+        <section class="projects_wrap">
+          
+          <!-- inner -->
+          <!-- inner -->
+          <div class="inner">
+            <div class="sub_tit">
+              <h3>Personal</h3>
+              <p>개인작업물 리스트입니다.</p>
+            </div>
+
+            <!-- tab_wrap -->
+            <!-- tab_wrap -->
+            <div class="tab_wrap">
+              <!-- <ul class="tabs filter_wrap">
+                <li class="tab-link current" data-tab="tab-1">Web Publishing</li>
+                <li class="tab-link" data-tab="tab-2">Graphic Design</li>
+              </ul> -->
+
+              <!-- tab-1 -->
+              <!-- tab-1 -->
+              <div id="tab-1" class="tab-content current">
+                <ul class="projects_body">
+
+                  <li class="project_li">
+                    <a href="javascript:openModal('modal4');" id="popupBtn01">
+                      <div class="img_box">
+                        <img src="images/sub/personal04_1.png" alt="포트폴리오">
+                      </div>
+                      <p class="bot">
+                        <span class="tit">
+                          현대건설
+                          <mark>리디자인+퍼블리싱</mark>
+                        </span>
+                        <button class="arrow"></button>
+                      </p>
+                    </a>
+                    <!-- 모달창 -->
+                    <div id="modalWrap" class="popup modal4">
+                      <span id="closeBtn" class="close">&times;</span>
+                      <a href="../01/hyundai/index.html" class="go_btn" target="_blank">사이트 바로가기 ></a>
+                      <div id="modalBody">
+                        <div class="modal">
+                          <div class="modal_txt">
+                            <div class="modal_tit">
+                              <h4>현대건설</h4>
+                              <p class="bot">
+                                현대건설 홈페이지 리디자인 및 퍼블리싱
+                              </p>
+                            </div>                              
+                            <div class="hash_list">
+                              <span class="tag">기획 100%</span>
+                              <span class="tag">디자인 100%</span>
+                              <span class="tag">구현 100%</span>
+                              <span class="tag bg_gray">퍼블리싱</span>
+                            </div>                           
+                          </div>
+                          <!-- <div class="modal_txt">
+                            <div class="modal_tit">
+                              <h5>모바일 시안 ↓</h5>
+                            </div>
+                          </div> -->
+                          <img src="images/sub/personal04_1.png" alt="메인페이지">
+                          <img src="images/sub/personal04_2.png" alt="메인페이지">
+                        </div>
+                      </div>
+                    </div><!-- 모달창 끝 -->
+                  </li>
+
+                  <li class="project_li">
+                    <a href="javascript:openModal('modal1');" id="popupBtn01">
+                      <div class="img_box">
+                        <img src="images/sub/personal03_2.png" alt="포트폴리오">
+                      </div>
+                      <p class="bot">
+                        <span class="tit">
+                          PORTFOLIO SITE
+                          <mark>반응형 홈페이지</mark>
+                        </span>
+                        <button class="arrow"></button>
+                      </p>
+                    </a>
+                    <!-- 모달창 -->
+                    <div id="modalWrap" class="popup modal1">
+                      <span id="closeBtn" class="close">&times;</span>
+                      <!-- <a href="https://moti.co.kr" class="go_btn" target="_blank">사이트 바로가기 ></a> -->
+                      <div id="modalBody">
+                        <div class="modal">
+                          <div class="modal_txt">
+                            <div class="modal_tit">
+                              <h4>PORTFOLIO SITE</h4>
+                              <p class="bot">
+                                포트폴리오 사이트 디자인 및 퍼블리싱
+                              </p>
+                            </div>                              
+                            <div class="hash_list">
+                              <span class="tag">기획 100%</span>
+                              <span class="tag">디자인 100%</span>
+                              <span class="tag">구현 100%</span>
+                              <span class="tag bg_gray">반응형</span>
+                            </div>                           
+                          </div>
+                          <!-- <div class="modal_txt">
+                            <div class="modal_tit">
+                              <h5>모바일 시안 ↓</h5>
+                            </div>
+                          </div> -->
+                          <img src="images/sub/personal03_1.png" alt="메인페이지">
+                        </div>
+                      </div>
+                    </div><!-- 모달창 끝 -->
+                  </li>
+                                  
+                  <li class="project_li">
+                    <a href="javascript:openModal('modal2');" id="popupBtn01">
+                      <div class="img_box">
+                        <img src="images/main/p_list15.png" alt="블루보틀모바일">
+                      </div>
+                      <p class="bot">
+                        <span class="tit">
+                          BLUE BOTTLE
+                          <mark>모바일 앱 시안 제작</mark>
+                        </span>
+                        <button class="arrow"></button>
+                      </p>
+                    </a>
+                    <!-- 모달창 -->
+                    <div id="modalWrap" class="popup modal2">
+                      <span id="closeBtn" class="close">&times;</span>
+                      <!-- <a href="https://moti.co.kr" class="go_btn" target="_blank">사이트 바로가기 ></a> -->
+                      <div id="modalBody">
+                        <div class="modal">
+                          <div class="modal_txt">
+                            <div class="modal_tit">
+                              <h4>BLUE BOTTLE</h4>
+                              <p class="bot">
+                                모바일 앱 시안 제작
+                                <br>(3시간 소요)
+                              </p>
+                            </div>                              
+                            <div class="hash_list">
+                              <span class="tag">기획 100%</span>
+                              <span class="tag">디자인 100%</span>
+                              <!-- <span class="tag">구현 100%</span> -->
+                              <span class="tag bg_gray">Figma</span>
+                            </div>                           
+                          </div>
+                          <!-- <div class="modal_txt">
+                            <div class="modal_tit">
+                              <h5>모바일 시안 ↓</h5>
+                            </div>
+                          </div> -->
+                          <img src="images/sub/personal02_2.png" alt="메인페이지">
+                          <br>
+                          <br>
+                          <img src="images/sub/personal02_1.png" alt="메인페이지" style="max-width: 400px;
+    border: 1px solid #ddd; margin:0 auto; display:block;">
+                        </div>
+                      </div>
+                    </div><!-- 모달창 끝 -->
+                  </li>
+
+                  <li class="project_li">
+                    <a href="javascript:openModal('modal3');" id="popupBtn01">
+                      <div class="img_box">
+                        <img src="images/main/p_list14.png" alt="자이">
+                      </div>
+                      <p class="bot">
+                        <span class="tit">
+                          자이
+                          <mark>메인 시안 제작</mark>
+                        </span>
+                        <button class="arrow"></button>
+                      </p>
+                    </a>
+                    <!-- 모달창 -->
+                    <div id="modalWrap" class="popup modal3">
+                      <span id="closeBtn" class="close">&times;</span>
+                      <!-- <a href="https://moti.co.kr" class="go_btn" target="_blank">사이트 바로가기 ></a> -->
+                      <div id="modalBody">
+                        <div class="modal">
+                          <div class="modal_txt">
+                            <div class="modal_tit">
+                              <h4>자이</h4>
+                              <p class="bot">
+                                분양 홈페이지 시안 제작
+                                <br>(2022년 終 / 1일 소요)
+                              </p>
+                            </div>                              
+                            <div class="hash_list">
+                              <span class="tag">기획 100%</span>
+                              <span class="tag">디자인 100%</span>
+                              <!-- <span class="tag">구현 100%</span> -->
+                              <span class="tag bg_gray">Photoshop</span>
+                            </div>                           
+                          </div>
+                          <div class="modal_txt">
+                            <div class="modal_tit">
+                              <h5>메인페이지 시안 ↓</h5>
+                            </div>
+                          </div>
+                          <img src="images/sub/personal01_1.png" alt="메인페이지">
+                        </div>
+                      </div>
+                    </div><!-- 모달창 끝 -->
+                  </li>
+
+                </ul>
+              </div>
+              <!-- tab-1 -->
+              <!-- tab-1 -->
+               
+
+           
+                  
+  
+
+            </div>
+            <!-- tab_wrap -->
+            <!-- tab_wrap -->
+
+
+          </div>
+          <!-- inner -->
+          <!-- inner -->
+
+        </section>
+
+        <!-- contact -->
+        <section class="contact_wrap">
+          <div class="contact_box">
+            <div class="contact_img" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-out" data-aos-duration="500" data-aos-once="true">
+                <img src="images/main/profile02.png" alt="캐릭터">
+            </div>
+
+            <div class="contact_txt" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-once="true">
+              <div class="title_wrap">
+                <h3>Contect</h3>                         
+              </div>
+              <div class="sub_tit">
+                <h5>역량있는 웹디자이너를 찾고계신가요?</h5>
+                <p> 다양한 경험과 탐구를 통해 발전하는 웹디자이너 송예지 입니다. <br>언제든 연락주세요 :)
+                </p>
+              </div>
+              <div class="contact_li">
+                <div class="contact_item">
+                  <i class="bi bi-envelope"></i>
+                  <span>syj3855@gmail.com</span>
+                </div>
+                <div class="contact_item">
+                  <i class="bi bi-telephone"></i>
+                  <span><a href="tel:010-9964-3855">010.9964.3855</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- //contact -->
+
+
+        
+        <footer id="footer" class="footer">
+          <div class="inner">
+            <div class="btn_top">
+              <a href="#">           
+                <i class="fa-solid fa-arrow-up"></i>            
+              </a>
+            </div>
+  
+            <div class="copyright_txt">
+              Designed and developed with <span style="color: red;">❤</span>
+              by YeJi. © 2024 All rights reserved
+            </div>
+  
+          </div>
+        </footer>
+
+      </div><!-- #content -->  
+    </div><!-- .site-content-container -->  
+  </div><!-- #page -->
+
+
+  
+
+  <script>
+  //팝업 열기
+  function openModal(modal1) {
+    document.get
+    $("." + modal1).fadeIn(300);
+  }
+  function openModal(modal2) {
+    document.get
+    $("." + modal2).fadeIn(300);
+  }
+  function openModal(modal3) {
+    document.get
+    $("." + modal3).fadeIn(300);
+  }
+  function openModal(modal4) {
+    document.get
+    $("." + modal4).fadeIn(300);
+  }
+  function openModal(modal5) {
+    document.get
+    $("." + modal5).fadeIn(300);
+  }
+  function openModal(modal6) {
+    document.get
+    $("." + modal6).fadeIn(300);
+  }
+  function openModal(modal7) {
+    document.get
+    $("." + modal7).fadeIn(300);
+  }
+  function openModal(modal8) {
+    document.get
+    $("." + modal8).fadeIn(300);
+  }
+  function openModal(modal9) {
+    document.get
+    $("." + modal9).fadeIn(300);
+  }
+  function openModal(modal10) {
+    document.get
+    $("." + modal10).fadeIn(300);
+  }
+  function openModal(modal11) {
+    document.get
+    $("." + modal11).fadeIn(300);
+  }
+  function openModal(modal12) {
+    document.get
+    $("." + modal12).fadeIn(300);
+  }
+  function openModal(modal13) {
+    document.get
+    $("." + modal13).fadeIn(300);
+  }
+  
+  
+  // 팝업 닫기
+  $('.popup .close').click(function() {
+      $(this).parent().fadeOut(300);
+  });
+
+
+  //탭버튼
+  const tabList = document.querySelectorAll('.tab_menu .list li');
+  $(document).ready(function(){
+    $('ul.tabs li').click(function(){
+      var tab_id = $(this).attr('data-tab');
+
+      $('ul.tabs li').removeClass('current');
+      $('.tab-content').removeClass('current');
+
+      $(this).addClass('current');
+      $("#"+tab_id).addClass('current');
+    });
+  });
+
+  //헤더스타일변경
+  $(window).scroll(function() {
+        if ($(window).scrollTop() > 10) {
+            $('.header_wrap').addClass('bg-blur')
+        } else {
+            $('.header_wrap').removeClass('bg-blur')
+        }
+    });
+
+    AOS.init({
+      //disable: 'mobile'
+    });
+
+    // 상단으로이동
+    $('.btn_top').click(function() {
+        $('html,body').animate({
+            scrollTop: $('html,body').offset().top
+        }, 600);
+        return false;
+    });
+
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+            $('.btn_top').fadeIn();
+        } else {
+            $('.btn_top').fadeOut();
+        }
+    });
+  </script>
+
+
+</body>
+</html>
