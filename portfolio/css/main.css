@@ -248,7 +248,7 @@ transition: transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s,
         justify-content: center;
     }
     #profile_wrap{
-        padding-top: 50px;
+        /* padding-top: 50px; */
         height: auto !important;
     }
     .profile-main{width: 300px;}
@@ -294,7 +294,7 @@ transition: transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s,
 .title_wrap { margin-bottom: 80px; text-align: center;}
 .title_wrap h3 { font-size: 60px; margin-bottom: 20px; font-family: 'GmarketSansMedium'; position: relative; display: inline-block;}
 .title_wrap h3:after{content:''; position: absolute; right: -20px; bottom: 9px; width: 12px; height: 12px; background-color: #00b4d8; border-radius: 50%;}
-.title_wrap p {letter-spacing: -1px;}
+.title_wrap p {letter-spacing: -1px; font-size:20px}
 
 .skill_list {display: flex; flex-wrap: wrap; align-items: flex-start; }
 .skill_box { width: calc((100% - 40px) / 2); margin-right: 20px; }
@@ -359,7 +359,7 @@ transition: transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s,
     /* background-color: #a3bdfb; */
     background: linear-gradient(45deg, #fbf7ff, #eff9ff);
 }
-.project_wrap::before{content:''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url("../images/main/sec04_bg.svg"); background-repeat: repeat;}
+/* .project_wrap::before{content:''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url("../images/main/sec04_bg.svg"); background-repeat: repeat;} */
 .project_wrap .inner { height: 100%; }
 .project_body { z-index: 2; position: relative; padding-bottom:200px; }
     
@@ -567,13 +567,13 @@ margin-left: auto;
 
 /* ----------------------------------------- */
 /* -------------contact section------------- */
-.contact_wrap{ background: #fff; height: 100vh; position: relative;}
+.contact_wrap{ background: #fff; position: relative;}
 .contact_wrap .title_wrap{text-align: left; margin-bottom: 30px;}
 .contact_box{ display: flex; width: 100%; height: 100%;justify-content: center; align-items: center; z-index: 2; position: relative;} 
 .contact_box .contact_img img{ max-width: 310px; width: 100%;}
 .contact_box .contact_txt{ padding-left: 110px;}
 .sub_tit{ margin-bottom: 50px;}
-.sub_tit h5{ font-size: 30px; margin-bottom: 15px; font-weight: bold;}
+.sub_tit h5{ font-size: 30px; margin-bottom: 15px; font-weight: bold; line-height: 1.3;}
 .sub_tit p{ font-size: 20px; color: #4E4E4E; line-height: 1.4;}
 
 .contact_li{ width: 100%;}
@@ -581,12 +581,11 @@ margin-left: auto;
 .contact_item span{ margin-left: 10px; font-size: 18px; font-family: 'Pretendard GOV'; letter-spacing: 0.5px;}
 .copyright_txt{ width: 100%; text-align: center; font-size: 16px;}
 
-@media screen and (max-width:992px){
-    .contact_wrap{ height: auto; padding-top: 50px;}
-    .contact_wrap .title_wrap{text-align: center; margin:20px 0;}
+@media screen and (max-width:991px){
+    .contact_wrap .title_wrap{text-align: center; margin:20px 0 !important}
     .contact_box{ flex-direction: column; padding: 0 24px;}
     .contact_box .contact_img img{max-width: 180px;}
-    .contact_box .contact_txt{ text-align: center; width: 100%; padding-left: 0; padding-top: 20px; padding-bottom: 40px;}
+    .contact_box .contact_txt{ text-align: center; width: 100%; padding-left: 0; padding-top: 20px;}
     .sub_tit{margin-bottom: 25px;}
     .sub_tit h5{font-size: 20px;}
     .sub_tit p{font-size: 16px;}

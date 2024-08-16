@@ -27,7 +27,7 @@
 }
 
  .bg-blur{
-    -webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(17px);
     backdrop-filter: blur(10px);
     background-color: hsla(0, 0%, 60%, 0.1) !important;
 } 

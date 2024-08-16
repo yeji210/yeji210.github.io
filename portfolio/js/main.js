@@ -178,20 +178,20 @@ $(document).ready(function(){
                 mainLead[0].classList.add("on");
                 mainLead[1].classList.remove("on");
                 mainLead[2].classList.remove("on");
-                mainLeadBox.style.width = a  + "px";
+                mainLeadBox.style.width = a + "px";
             }, 0)
             );
             animTimeouts.push(
             setTimeout(() => {
                 mainLead[0].classList.remove("on");
-                mainLeadBox.style.width = b + 80 + "px";
+                mainLeadBox.style.width = b + 220 + "px";
                 mainLead[1].classList.add("on");
             }, 3000)
             );
             animTimeouts.push(
             setTimeout(() => {
                 mainLead[1].classList.remove("on");
-                mainLeadBox.style.width = c  + 20 + "px";
+                mainLeadBox.style.width = c + 240 + "px";
                 mainLead[2].classList.add("on");
             }, 6000)
             );
@@ -202,20 +202,20 @@ $(document).ready(function(){
                     mainLead[0].classList.add("on");
                     mainLead[1].classList.remove("on");
                     mainLead[2].classList.remove("on");
-                    mainLeadBox.style.width = a  + "px";
+                    mainLeadBox.style.width = a + "px";
                 }, 0)
                 );
                 animTimeouts.push(
                 setTimeout(() => {
                     mainLead[0].classList.remove("on");
-                    mainLeadBox.style.width = b + 80 + "px";
+                    mainLeadBox.style.width = b + 220 + "px";
                     mainLead[1].classList.add("on");
                 }, 3000)
                 );
                 animTimeouts.push(
                 setTimeout(() => {
                     mainLead[1].classList.remove("on");
-                    mainLeadBox.style.width = c + 20 + "px";
+                    mainLeadBox.style.width = c + 240 + "px";
                     mainLead[2].classList.add("on");
                 }, 6000)
                 );
