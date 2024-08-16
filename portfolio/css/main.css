@@ -296,12 +296,6 @@ transition: transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s,
 .title_wrap h3:after{content:''; position: absolute; right: -20px; bottom: 9px; width: 12px; height: 12px; background-color: #00b4d8; border-radius: 50%;}
 .title_wrap p {letter-spacing: -1px; font-size:20px}
 
-.skill_list {display: flex; flex-wrap: wrap; align-items: flex-start; }
-.skill_box { width: calc((100% - 40px) / 2); margin-right: 20px; }
-.skill_box:nth-child(3n) { margin-right: 0;}
-.skill_box img { height: 380px; width: 100%; object-fit: cover; margin-bottom: 10px; transition: 0.3s ease; }
-.skill_box:hover > img { border-radius: 90px; }
-
 .txt_box_wrap { position: relative; }
 .txt_box_wrap::before, .txt_box_wrap::after { content: ""; position: absolute; bottom :0; width: 0; height: 1px; background: #000; display: block; transition: 0.35s ease;}
 .txt_box_wrap::after { top: 0; height: 2px; }
@@ -336,9 +330,8 @@ transition: transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s,
 }
 
 .skill .skill_li{display: flex; justify-content: center; gap: 70px;}
-.skill .skill_li li:hover{transform: translateY(-10px); transition: all 0.2s;}
+.skill .skill_li li:hover img{transform: translateY(-10px); transition: all 0.2s;}
 .skill .skill_li li img{box-shadow: 3px 7px 18px rgba(0, 0, 0, 0.1); border-radius: 18px; max-width: 75px;}
-/* .skill .skill_li li:hover img{box-shadow: 3px 15px 18px rgba(0, 0, 0, 0.1);} */
 .skill .skill_li li p{font-family: 'GmarketSansMedium'; color: #aaa; font-size: 12px; margin-top: 20px; text-align: center; background-color: #bcbcbc21; padding: 5px; border-radius: 27px;}
 
 @media screen and (max-width: 991px) {
